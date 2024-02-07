@@ -116,7 +116,7 @@
     "Id": "187879c9-e3a3-4a16-b4b4-a00962f64b62",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "ManualOfflineProfileId": "",
+    "ManualOfflineProfileId": null,
     "Name": "Git connect",
     "OriginatingVersion": "1.336",
     "ParserErrorCount": 0,
