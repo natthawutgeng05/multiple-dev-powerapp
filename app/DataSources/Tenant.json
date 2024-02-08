@@ -1,0 +1,126 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cra20_tenants",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cra20_tenant",
+    "Name": "Tenant",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "cra20_accountnumber": "Account number",
+      "cra20_addressbilling": "Address billing",
+      "cra20_bank": "Bank",
+      "cra20_bankbranch": "Bank branch",
+      "cra20_building": "Building",
+      "cra20_condition": "Condition",
+      "cra20_email": "Email",
+      "cra20_id": "ID",
+      "cra20_jobs": "Jobs",
+      "cra20_referencename": "Reference name",
+      "cra20_referencetelephone": "Reference telephone",
+      "cra20_telephone": "Telephone",
+      "cra20_tenantaddress": "Tenant address",
+      "cra20_tenantid": "Tenant",
+      "cra20_tenantname": "Tenant name",
+      "cra20_title": "Title",
+      "cra20_type": "Type",
+      "createdon": "Created On",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedon": "Modified On",
+      "overriddencreatedon": "Record Created On",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Tenant",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Title (Tenant)",
+    "Name": "cra20_tenant_cra20_title",
+    "OptionSetInfoNameMapping": {
+      "146190000": "นาย",
+      "146190001": "นาง",
+      "146190002": "นางสาว",
+      "146190003": "บริษัท",
+      "146190004": "ห้างหุ้นส่วนจำกัด",
+      "146190005": "โรงเรียน",
+      "146190006": "ห้างหุ้นส่วนสามัญ"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cra20_title",
+        "OptionSetReferenceEntityName": "Tenant"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cra20_title",
+    "RelatedEntityName": "Tenant",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Type (Tenant)",
+    "Name": "cra20_tenant_cra20_type",
+    "OptionSetInfoNameMapping": {
+      "146190000": "นิติบุคคล",
+      "146190001": "บุคคลธรรมดา"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cra20_type",
+        "OptionSetReferenceEntityName": "Tenant"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cra20_type",
+    "RelatedEntityName": "Tenant",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Tenant)",
+    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_5ff3d173ac_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Tenant"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Tenant",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Tenant)",
+    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_5ff3d173ac_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Tenant"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Tenant",
+    "Type": "OptionSetInfo"
+  }
+]

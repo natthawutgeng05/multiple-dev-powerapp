@@ -1,0 +1,135 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cra20_landtitledeeds",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cra20_landtitledeed",
+    "MaxGetRowsCount": 500,
+    "Name": "Land title deed",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cra20_landtitledeed_AsyncOperations": "System Jobs",
+      "cra20_landtitledeed_BulkDeleteFailures": "Bulk Delete Failures",
+      "cra20_landtitledeed_DuplicateBaseRecord": "Duplicate Records (cra20_landtitledeed_DuplicateBaseRecord)",
+      "cra20_landtitledeed_DuplicateMatchingRecord": "Duplicate Records (cra20_landtitledeed_DuplicateMatchingRecord)",
+      "cra20_landtitledeed_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cra20_landtitledeed_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cra20_landtitledeed_ProcessSession": "Process Sessions",
+      "cra20_landtitledeed_SyncErrors": "Sync Errors",
+      "cra20_landtitledeedid": "Land title deed",
+      "cra20_ngan": "Ngan",
+      "cra20_rai": "Rai",
+      "cra20_squaretwometers": "square two-meters",
+      "cra20_survey": "Survey",
+      "cra20_title_deed_number": "Title_deed_number",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Land title deed",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Land title deed (มุมมอง)",
+    "Name": "_cra20_landtitledeed_views",
+    "RelatedEntityName": "Land title deed",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {}
+  },
+  {
+    "DisplayName": "Status (Land title deed)_1",
+    "Name": "cra20_landtitledeed_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Land title deed"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Land title deed",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Land title deed)_1",
+    "Name": "cra20_landtitledeed_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Land title deed"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Land title deed",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Land title deed)",
+    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_c38c9df287_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Land title deed"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Land title deed",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Land title deed)",
+    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_c38c9df287_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Land title deed"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Land title deed",
+    "Type": "OptionSetInfo"
+  }
+]

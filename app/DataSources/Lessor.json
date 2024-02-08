@@ -1,0 +1,76 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cra20_lessors",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cra20_lessor",
+    "Name": "Lessor",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "cra20_district": "District",
+      "cra20_fax": "Fax",
+      "cra20_lane": "Lane",
+      "cra20_lessorid": "Lessor",
+      "cra20_lessorname": "Lessor Name",
+      "cra20_number": "Number",
+      "cra20_postalcode": "Postal Code",
+      "cra20_province": "Province",
+      "cra20_subdistrict": "Sub-district",
+      "cra20_taxpayer_number": "Taxpayer_number",
+      "cra20_telephone": "Telephone",
+      "cra20_villageno": "Village No",
+      "createdon": "Created On",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedon": "Modified On",
+      "overriddencreatedon": "Record Created On",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Lessor",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (Lessor)",
+    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_34fcd788f0_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Lessor"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Lessor",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Lessor)",
+    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_34fcd788f0_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Lessor"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Lessor",
+    "Type": "OptionSetInfo"
+  }
+]

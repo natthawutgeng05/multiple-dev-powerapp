@@ -1,0 +1,67 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cra20_landlords",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cra20_landlord",
+    "Name": "Landlord",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "cra20_landlorddetail": "Landlord detail",
+      "cra20_landlordid": "Landlord",
+      "cra20_landlordname": "Landlord name",
+      "createdon": "Created On",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedon": "Modified On",
+      "overriddencreatedon": "Record Created On",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Landlord",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (Landlord)",
+    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_b0638432c1_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Landlord"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Landlord",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Landlord)",
+    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_b0638432c1_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Landlord"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Landlord",
+    "Type": "OptionSetInfo"
+  }
+]
