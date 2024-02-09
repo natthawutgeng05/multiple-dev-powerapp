@@ -6,24 +6,40 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cra20_lessor",
+    "MaxGetRowsCount": 500,
     "Name": "Lessor",
     "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
       "cra20_district": "District",
       "cra20_fax": "Fax",
       "cra20_lane": "Lane",
+      "cra20_lessor_AsyncOperations": "System Jobs",
+      "cra20_lessor_BulkDeleteFailures": "Bulk Delete Failures",
+      "cra20_lessor_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cra20_lessor_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cra20_lessor_ProcessSession": "Process Sessions",
+      "cra20_lessor_SyncErrors": "Sync Errors",
       "cra20_lessorid": "Lessor",
       "cra20_lessorname": "Lessor Name",
       "cra20_number": "Number",
       "cra20_postalcode": "Postal Code",
       "cra20_province": "Province",
+      "cra20_rent_Lessor_cra20_lessor": "Rent",
       "cra20_subdistrict": "Sub-district",
       "cra20_taxpayer_number": "Taxpayer_number",
       "cra20_telephone": "Telephone",
       "cra20_villageno": "Village No",
+      "createdby": "Created By",
       "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
       "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
       "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
       "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
       "statecode": "Status",
       "statuscode": "Status Reason",
       "timezoneruleversionnumber": "Time Zone Rule Version Number",
@@ -32,6 +48,60 @@
     },
     "PreferredName": "Lessor",
     "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Lessor (มุมมอง)",
+    "Name": "_cra20_lessor_views",
+    "RelatedEntityName": "Lessor",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0e414231-5e36-4135-9c92-5c9d09907132": "Lessor Lookup View",
+      "39dbcb64-d788-4cb0-b5ec-87f9ef86188d": "Active Lessor",
+      "d98ff197-56bb-4929-acee-e3b5e38c4b53": "Lessor Advanced Find View",
+      "e99f478b-dede-4013-87c1-d9c2742e8cdd": "Inactive Lessor",
+      "f3237969-5315-4d5d-a61c-78fe406e5127": "Lessor Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Lessor)_1",
+    "Name": "cra20_lessor_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Lessor"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Lessor",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Lessor)_1",
+    "Name": "cra20_lessor_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Lessor"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Lessor",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Status (Lessor)",

@@ -6,15 +6,31 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cra20_landlord",
+    "MaxGetRowsCount": 500,
     "Name": "Landlord",
     "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cra20_landlord_AsyncOperations": "System Jobs",
+      "cra20_landlord_BulkDeleteFailures": "Bulk Delete Failures",
+      "cra20_landlord_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cra20_landlord_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cra20_landlord_ProcessSession": "Process Sessions",
+      "cra20_landlord_SyncErrors": "Sync Errors",
       "cra20_landlorddetail": "Landlord detail",
       "cra20_landlordid": "Landlord",
       "cra20_landlordname": "Landlord name",
+      "cra20_landtitledeed_Landlord_cra20_landlord": "Land title deed",
+      "createdby": "Created By",
       "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
       "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
       "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
       "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
       "statecode": "Status",
       "statuscode": "Status Reason",
       "timezoneruleversionnumber": "Time Zone Rule Version Number",
@@ -23,6 +39,60 @@
     },
     "PreferredName": "Landlord",
     "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Landlord (มุมมอง)",
+    "Name": "_cra20_landlord_views",
+    "RelatedEntityName": "Landlord",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "28b02ce1-b5bf-47cf-8fb9-26a47d796c84": "Landlord Advanced Find View",
+      "377f5e01-47c9-4ab0-866d-54b9b50ef67c": "Inactive Landlord",
+      "af52d4f2-bf47-401b-a3cd-bb9649763bf5": "Landlord Associated View",
+      "eb455436-dab4-49b3-b7b5-b2b471c37a79": "Landlord Lookup View",
+      "ed8425ba-c535-4c45-9788-679440731f3f": "Active Landlord"
+    }
+  },
+  {
+    "DisplayName": "Status (Landlord)_1",
+    "Name": "cra20_landlord_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Landlord"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Landlord",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Landlord)_1",
+    "Name": "cra20_landlord_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Landlord"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Landlord",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Status (Landlord)",

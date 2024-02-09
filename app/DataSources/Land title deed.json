@@ -10,6 +10,9 @@
     "Name": "Land title deed",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cra20_addressontitledeed": "Address on title deed",
+      "cra20_datebuy": "Date buy",
+      "cra20_Landlord": "Landlord",
       "cra20_landtitledeed_AsyncOperations": "System Jobs",
       "cra20_landtitledeed_BulkDeleteFailures": "Bulk Delete Failures",
       "cra20_landtitledeed_DuplicateBaseRecord": "Duplicate Records (cra20_landtitledeed_DuplicateBaseRecord)",
@@ -20,10 +23,13 @@
       "cra20_landtitledeed_SyncErrors": "Sync Errors",
       "cra20_landtitledeedid": "Land title deed",
       "cra20_ngan": "Ngan",
+      "cra20_originalowner": "Original owner",
+      "cra20_property_Landtitledeed_cra20_landtitledee": "Property",
       "cra20_rai": "Rai",
       "cra20_squaretwometers": "square two-meters",
       "cra20_survey": "Survey",
       "cra20_title_deed_number": "Title_deed_number",
+      "cra20_Zone": "Zone",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -50,10 +56,16 @@
     "RelatedEntityName": "Land title deed",
     "TrimmedViewName": true,
     "Type": "ViewInfo",
-    "ViewInfoNameMapping": {}
+    "ViewInfoNameMapping": {
+      "25cea249-d7c3-48fb-b5f9-565cc2ff32fc": "Land title deed Associated View",
+      "9c1a1b58-af2f-4b23-bad7-fb197ad8ff6a": "Land title deed Lookup View",
+      "b781d24c-e7f8-4472-aed2-93c11215a6ea": "Inactive Land title deed",
+      "b8d9a9b4-7376-4ea9-a350-2a539b4118e6": "Active Land title deed",
+      "c7e04fe7-893f-4f5f-bc38-4dfa7fee982d": "Land title deed Advanced Find View"
+    }
   },
   {
-    "DisplayName": "Status (Land title deed)_1",
+    "DisplayName": "Status (Land title deed)",
     "Name": "cra20_landtitledeed_statecode",
     "OptionSetInfoNameMapping": {
       "0": "Active",
@@ -73,48 +85,8 @@
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "Status Reason (Land title deed)_1",
-    "Name": "cra20_landtitledeed_statuscode",
-    "OptionSetInfoNameMapping": {
-      "1": "Active",
-      "2": "Inactive"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": false,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "statuscode",
-        "OptionSetReferenceEntityName": "Land title deed"
-      }
-    },
-    "OptionSetTypeKey": "StatusType",
-    "RelatedColumnInvariantName": "statuscode",
-    "RelatedEntityName": "Land title deed",
-    "Type": "OptionSetInfo"
-  },
-  {
-    "DisplayName": "Status (Land title deed)",
-    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_c38c9df287_statecode",
-    "OptionSetInfoNameMapping": {
-      "0": "Active",
-      "1": "Inactive"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": false,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "statecode",
-        "OptionSetReferenceEntityName": "Land title deed"
-      }
-    },
-    "OptionSetTypeKey": "StateType",
-    "RelatedColumnInvariantName": "statecode",
-    "RelatedEntityName": "Land title deed",
-    "Type": "OptionSetInfo"
-  },
-  {
     "DisplayName": "Status Reason (Land title deed)",
-    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_c38c9df287_statuscode",
+    "Name": "cra20_landtitledeed_statuscode",
     "OptionSetInfoNameMapping": {
       "1": "Active",
       "2": "Inactive"

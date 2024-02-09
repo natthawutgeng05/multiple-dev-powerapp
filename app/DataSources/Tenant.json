@@ -6,8 +6,10 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cra20_tenant",
+    "MaxGetRowsCount": 500,
     "Name": "Tenant",
     "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
       "cra20_accountnumber": "Account number",
       "cra20_addressbilling": "Address billing",
       "cra20_bank": "Bank",
@@ -19,16 +21,33 @@
       "cra20_jobs": "Jobs",
       "cra20_referencename": "Reference name",
       "cra20_referencetelephone": "Reference telephone",
+      "cra20_rent_Tenant_cra20_tenant": "Rent",
       "cra20_telephone": "Telephone",
+      "cra20_tenant_AsyncOperations": "System Jobs",
+      "cra20_tenant_BulkDeleteFailures": "Bulk Delete Failures",
+      "cra20_tenant_DuplicateBaseRecord": "Duplicate Records (cra20_tenant_DuplicateBaseRecord)",
+      "cra20_tenant_DuplicateMatchingRecord": "Duplicate Records (cra20_tenant_DuplicateMatchingRecord)",
+      "cra20_tenant_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cra20_tenant_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cra20_tenant_ProcessSession": "Process Sessions",
+      "cra20_tenant_SyncErrors": "Sync Errors",
       "cra20_tenantaddress": "Tenant address",
       "cra20_tenantid": "Tenant",
       "cra20_tenantname": "Tenant name",
       "cra20_title": "Title",
       "cra20_type": "Type",
+      "cra20_utitlities_Tenat_cra20_tenant": "Utitlities",
+      "createdby": "Created By",
       "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
       "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
       "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
       "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
       "statecode": "Status",
       "statuscode": "Status Reason",
       "timezoneruleversionnumber": "Time Zone Rule Version Number",
@@ -37,6 +56,20 @@
     },
     "PreferredName": "Tenant",
     "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Tenant (มุมมอง)",
+    "Name": "_cra20_tenant_views",
+    "RelatedEntityName": "Tenant",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "328a409c-54fe-410d-9382-605838c6522e": "Tenant Lookup View",
+      "4033c799-e495-4263-a527-67efabcc6f26": "Tenant Associated View",
+      "89a36675-df09-48e3-8818-cb540452e81b": "Tenant Advanced Find View",
+      "beadfd76-1872-452e-94d7-4540f4f52a41": "Inactive Tenant",
+      "f5407c3a-65a4-4de5-932c-e0200bee3627": "Active Tenant"
+    }
   },
   {
     "DisplayName": "Title (Tenant)",
@@ -80,6 +113,46 @@
     },
     "OptionSetTypeKey": "PicklistType",
     "RelatedColumnInvariantName": "cra20_type",
+    "RelatedEntityName": "Tenant",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Tenant)_1",
+    "Name": "cra20_tenant_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Tenant"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Tenant",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Tenant)_1",
+    "Name": "cra20_tenant_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Tenant"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
     "RelatedEntityName": "Tenant",
     "Type": "OptionSetInfo"
   },
