@@ -117,7 +117,7 @@
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "Status (Tenant)_1",
+    "DisplayName": "Status (Tenant)",
     "Name": "cra20_tenant_statecode",
     "OptionSetInfoNameMapping": {
       "0": "Active",
@@ -137,48 +137,8 @@
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "Status Reason (Tenant)_1",
-    "Name": "cra20_tenant_statuscode",
-    "OptionSetInfoNameMapping": {
-      "1": "Active",
-      "2": "Inactive"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": false,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "statuscode",
-        "OptionSetReferenceEntityName": "Tenant"
-      }
-    },
-    "OptionSetTypeKey": "StatusType",
-    "RelatedColumnInvariantName": "statuscode",
-    "RelatedEntityName": "Tenant",
-    "Type": "OptionSetInfo"
-  },
-  {
-    "DisplayName": "Status (Tenant)",
-    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_5ff3d173ac_statecode",
-    "OptionSetInfoNameMapping": {
-      "0": "Active",
-      "1": "Inactive"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": false,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "statecode",
-        "OptionSetReferenceEntityName": "Tenant"
-      }
-    },
-    "OptionSetTypeKey": "StateType",
-    "RelatedColumnInvariantName": "statecode",
-    "RelatedEntityName": "Tenant",
-    "Type": "OptionSetInfo"
-  },
-  {
     "DisplayName": "Status Reason (Tenant)",
-    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_5ff3d173ac_statuscode",
+    "Name": "cra20_tenant_statuscode",
     "OptionSetInfoNameMapping": {
       "1": "Active",
       "2": "Inactive"

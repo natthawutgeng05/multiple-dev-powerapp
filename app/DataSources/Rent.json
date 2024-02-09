@@ -1,0 +1,148 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cra20_rents",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cra20_rent",
+    "Name": "Rent",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cra20_30d119aa90b44bf2955b58fcc49bcedf": "คอลัมน์ใหม่",
+      "cra20_contractnumber": "Contract number",
+      "cra20_date": "Date",
+      "cra20_file": "File",
+      "cra20_insurance": "Insurance",
+      "cra20_Lessor": "Lessor",
+      "cra20_paymentutilitiesmethod": "Payment utilities method",
+      "cra20_Property": "Property",
+      "cra20_rent_AsyncOperations": "System Jobs",
+      "cra20_rent_BulkDeleteFailures": "Bulk Delete Failures",
+      "cra20_rent_DuplicateBaseRecord": "Duplicate Records (cra20_rent_DuplicateBaseRecord)",
+      "cra20_rent_DuplicateMatchingRecord": "Duplicate Records (cra20_rent_DuplicateMatchingRecord)",
+      "cra20_rent_FileAttachments": "FileAttachments",
+      "cra20_rent_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cra20_rent_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cra20_rent_ProcessSession": "Process Sessions",
+      "cra20_rent_SyncErrors": "Sync Errors",
+      "cra20_rentalexpireddate": "Rental expired date",
+      "cra20_rentalstartdate": "Rental start date",
+      "cra20_rentid": "Rent",
+      "cra20_rentnote": "Rent note",
+      "cra20_Tenant": "Tenant",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Rent",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Rent (มุมมอง)",
+    "Name": "_cra20_rent_views",
+    "RelatedEntityName": "Rent",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "289ad256-8b1e-484a-a8e1-5fdad2e532ca": "Rent Advanced Find View",
+      "5b75c65c-522d-47d5-b6e3-4039612158b5": "Inactive Rent",
+      "6f14d087-6cbd-4524-aa5c-3e1d6c790fab": "Rent Lookup View",
+      "88bbab85-22d2-4c00-8464-87f558a0da00": "Active Rent",
+      "a32889b0-764b-40f5-bf06-8ac6b17b46df": "Rent Associated View"
+    }
+  },
+  {
+    "DisplayName": "Insurance (Rent)",
+    "Name": "cra20_rent_cra20_insurance",
+    "OptionSetInfoNameMapping": {
+      "0": "ไม่",
+      "1": "ใช่"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cra20_insurance",
+        "OptionSetReferenceEntityName": "Rent"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cra20_insurance",
+    "RelatedEntityName": "Rent",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Payment utilities method (Rent)",
+    "Name": "cra20_rent_cra20_paymentutilitiesmethod",
+    "OptionSetInfoNameMapping": {
+      "146190000": "ผู้เช่าชำระเอง",
+      "146190001": "ผู้ให้เช่าชำระให้"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cra20_paymentutilitiesmethod",
+        "OptionSetReferenceEntityName": "Rent"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cra20_paymentutilitiesmethod",
+    "RelatedEntityName": "Rent",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Rent)",
+    "Name": "cra20_rent_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Rent"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Rent",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Rent)",
+    "Name": "cra20_rent_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Rent"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Rent",
+    "Type": "OptionSetInfo"
+  }
+]

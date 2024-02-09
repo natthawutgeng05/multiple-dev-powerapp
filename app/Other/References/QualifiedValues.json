@@ -34,6 +34,34 @@
       "Values": {
         "Information": "d48e2076-dd53-4eba-a8c4-dbf97242cdd3"
       }
+    },
+    {
+      "Kind": "default.cds_cra20_property_forms",
+      "Namespace": "Property (ฟอร์ม)",
+      "Values": {
+        "Information": "d83b5851-bf74-41e2-a177-dbae3c94153d"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_rent_forms",
+      "Namespace": "Rent (ฟอร์ม)",
+      "Values": {
+        "Information": "6695dec6-3536-42bb-a09a-dcaeb56afa82"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_utilities_forms",
+      "Namespace": "Utilities (ฟอร์ม)",
+      "Values": {
+        "Information": "997e4693-9321-4451-a3ee-cbc2d9fe7584"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_utitlities_forms",
+      "Namespace": "Utitlities (ฟอร์ม)",
+      "Values": {
+        "Information": "b565d944-714c-4cad-b721-e2429e8eabae"
+      }
     }
   ]
 }

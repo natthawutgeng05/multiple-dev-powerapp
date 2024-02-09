@@ -57,7 +57,7 @@
     }
   },
   {
-    "DisplayName": "Status (Zone)_1",
+    "DisplayName": "Status (Zone)",
     "Name": "cra20_zone_statecode",
     "OptionSetInfoNameMapping": {
       "0": "Active",
@@ -77,48 +77,8 @@
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "Status Reason (Zone)_1",
-    "Name": "cra20_zone_statuscode",
-    "OptionSetInfoNameMapping": {
-      "1": "Active",
-      "2": "Inactive"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": false,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "statuscode",
-        "OptionSetReferenceEntityName": "Zone"
-      }
-    },
-    "OptionSetTypeKey": "StatusType",
-    "RelatedColumnInvariantName": "statuscode",
-    "RelatedEntityName": "Zone",
-    "Type": "OptionSetInfo"
-  },
-  {
-    "DisplayName": "Status (Zone)",
-    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_9b3383be76_statecode",
-    "OptionSetInfoNameMapping": {
-      "0": "Active",
-      "1": "Inactive"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": false,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "statecode",
-        "OptionSetReferenceEntityName": "Zone"
-      }
-    },
-    "OptionSetTypeKey": "StateType",
-    "RelatedColumnInvariantName": "statecode",
-    "RelatedEntityName": "Zone",
-    "Type": "OptionSetInfo"
-  },
-  {
     "DisplayName": "Status Reason (Zone)",
-    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_9b3383be76_statuscode",
+    "Name": "cra20_zone_statuscode",
     "OptionSetInfoNameMapping": {
       "1": "Active",
       "2": "Inactive"

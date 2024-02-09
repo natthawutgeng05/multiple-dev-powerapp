@@ -1,0 +1,125 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cra20_properties",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cra20_property",
+    "Name": "Property",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cra20_details": "Details",
+      "cra20_image": "Image",
+      "cra20_imageid": "cra20_ImageId",
+      "cra20_Landtitledeed": "Land title deed",
+      "cra20_lane": "Lane",
+      "cra20_number": "Number",
+      "cra20_numberoffloors": "์Number of floors",
+      "cra20_property_AsyncOperations": "System Jobs",
+      "cra20_property_BulkDeleteFailures": "Bulk Delete Failures",
+      "cra20_property_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cra20_property_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cra20_property_ProcessSession": "Process Sessions",
+      "cra20_property_SyncErrors": "Sync Errors",
+      "cra20_propertyid": "Property",
+      "cra20_propertyname": "Property name",
+      "cra20_rent_Property_cra20_property": "Rent",
+      "cra20_type": "Type",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Property",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Property (มุมมอง)",
+    "Name": "_cra20_property_views",
+    "RelatedEntityName": "Property",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2c364137-35e2-4443-a034-260d022dd0d8": "Inactive Property",
+      "2ef4c29f-2596-4f5c-8da9-a6fefbbe2748": "Property Associated View",
+      "93abda69-6d8f-4851-8133-d846a24fcb36": "Property Lookup View",
+      "e31b6e6e-8155-43e0-9cd8-18b57530de98": "Active Property",
+      "e8846a15-b049-48a8-a56d-04641d61e22e": "Property Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Type (Property)",
+    "Name": "cra20_property_cra20_type",
+    "OptionSetInfoNameMapping": {
+      "146190000": "บ้านเช่า",
+      "146190001": "โกดัง",
+      "146190002": "ที่ดิน",
+      "146190003": "ทรัพย์สินอื่น ๆ"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cra20_type",
+        "OptionSetReferenceEntityName": "Property"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cra20_type",
+    "RelatedEntityName": "Property",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Property)",
+    "Name": "cra20_property_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Property"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Property",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Property)",
+    "Name": "cra20_property_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Property"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Property",
+    "Type": "OptionSetInfo"
+  }
+]

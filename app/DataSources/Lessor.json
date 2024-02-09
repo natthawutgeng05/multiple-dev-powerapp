@@ -64,7 +64,7 @@
     }
   },
   {
-    "DisplayName": "Status (Lessor)_1",
+    "DisplayName": "Status (Lessor)",
     "Name": "cra20_lessor_statecode",
     "OptionSetInfoNameMapping": {
       "0": "Active",
@@ -84,48 +84,8 @@
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "Status Reason (Lessor)_1",
-    "Name": "cra20_lessor_statuscode",
-    "OptionSetInfoNameMapping": {
-      "1": "Active",
-      "2": "Inactive"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": false,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "statuscode",
-        "OptionSetReferenceEntityName": "Lessor"
-      }
-    },
-    "OptionSetTypeKey": "StatusType",
-    "RelatedColumnInvariantName": "statuscode",
-    "RelatedEntityName": "Lessor",
-    "Type": "OptionSetInfo"
-  },
-  {
-    "DisplayName": "Status (Lessor)",
-    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_34fcd788f0_statecode",
-    "OptionSetInfoNameMapping": {
-      "0": "Active",
-      "1": "Inactive"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": false,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "statecode",
-        "OptionSetReferenceEntityName": "Lessor"
-      }
-    },
-    "OptionSetTypeKey": "StateType",
-    "RelatedColumnInvariantName": "statecode",
-    "RelatedEntityName": "Lessor",
-    "Type": "OptionSetInfo"
-  },
-  {
     "DisplayName": "Status Reason (Lessor)",
-    "Name": "new_reserveentity_rp53fd1p1ekxpa_t7_34fcd788f0_statuscode",
+    "Name": "cra20_lessor_statuscode",
     "OptionSetInfoNameMapping": {
       "1": "Active",
       "2": "Inactive"
