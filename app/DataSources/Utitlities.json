@@ -17,6 +17,7 @@
       "cra20_meter_water_init": "Meter_water_init",
       "cra20_meter_water_last": "Meter_water_last",
       "cra20_monthly": "Monthly",
+      "cra20_Rent": "Rent",
       "cra20_Tenant": "Tenant",
       "cra20_unit_electric_price": "Unit_electric_price",
       "cra20_unit_water_price": "Unit_water_price",
