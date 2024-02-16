@@ -50,17 +50,17 @@
       }
     },
     {
-      "Kind": "default.cds_cra20_utilities_forms",
-      "Namespace": "Utilities (ฟอร์ม)",
-      "Values": {
-        "Information": "997e4693-9321-4451-a3ee-cbc2d9fe7584"
-      }
-    },
-    {
       "Kind": "default.cds_cra20_utitlities_forms",
       "Namespace": "Utitlities (ฟอร์ม)",
       "Values": {
         "Information": "b565d944-714c-4cad-b721-e2429e8eabae"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_utilities_forms",
+      "Namespace": "Utilities (ฟอร์ม)",
+      "Values": {
+        "Information": "997e4693-9321-4451-a3ee-cbc2d9fe7584"
       }
     }
   ]

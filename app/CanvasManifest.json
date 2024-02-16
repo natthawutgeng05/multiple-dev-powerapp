@@ -5,7 +5,7 @@
       "DataflowAnalysisEnabled": false,
       "DataflowAnalysisFlagStateToggledByUser": false
     },
-    "DocVersion": "1.336",
+    "DocVersion": "1.337",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
   },
@@ -74,7 +74,7 @@
       "optimizedforteamsmeeting": false,
       "packagemodernruntime": false,
       "parallelcodegen": false,
-      "pdffunction": false,
+      "pdffunction": true,
       "powerfxdecimal": false,
       "powerfxv1": false,
       "primaryoutputpropertycoerciondeprecated": true,
@@ -134,6 +134,7 @@
   },
   "ScreenOrder": [
     "Screen1",
-    "Screen2"
+    "Screen2",
+    "Screen3"
   ]
 }

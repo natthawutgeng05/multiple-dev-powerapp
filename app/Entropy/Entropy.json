@@ -3,14 +3,25 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "Gallery1": 7,
+    "galleryTemplate1": 8,
     "Host": 3,
+    "Icon1": 17,
+    "Image1": 9,
     "Label1": 5,
+    "NextArrow1": 12,
+    "PdfViewer2": 18,
+    "Rectangle1": 14,
     "Screen1": 4,
-    "Screen2": 6
+    "Screen2": 6,
+    "Screen3": 19,
+    "Separator1": 13,
+    "Subtitle1": 11,
+    "Title1": 10
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/09/2024 07:42:07",
+  "HeaderLastSavedDateTimeUTC": "02/16/2024 09:18:09",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -19,6 +30,7 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
+    "CustomGallerySample": 38,
     "Land title deed": 34,
     "Land title deed\\cra20_landtitledeed_statecode": 10,
     "Land title deed\\cra20_landtitledeed_statuscode": 11,
@@ -62,34 +74,64 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "label": 0
+    "gallery": 1,
+    "icon": 4,
+    "image": 3,
+    "label": 0,
+    "pdfViewer": 5,
+    "rectangle": 2
   },
   "OverridablePropertiesEntry": {
     "App": {},
+    "Gallery1": {},
+    "galleryTemplate1": {},
     "Host": {},
+    "Icon1": {},
+    "Image1": {},
     "Label1": {},
+    "NextArrow1": {},
+    "PdfViewer2": {},
+    "Rectangle1": {},
     "Screen1": {},
-    "Screen2": {}
+    "Screen2": {},
+    "Screen3": {},
+    "Separator1": {},
+    "Subtitle1": {},
+    "Title1": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
+    "Gallery1": 1,
+    "galleryTemplate1": 2,
     "Host": 0,
+    "Icon1": 9,
+    "Image1": 4,
     "Label1": 0,
+    "NextArrow1": 5,
+    "PdfViewer2": 10,
+    "Rectangle1": 3,
     "Screen1": 3,
-    "Screen2": 5
+    "Screen2": 5,
+    "Screen3": 0,
+    "Separator1": 8,
+    "Subtitle1": 7,
+    "Title1": 6
   },
-  "ResourcesJsonIndices": {},
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0,
+    "Pdf-SamplePdf": 1
+  },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0569258,
+    "AnalysisLoadTime": 0.0494922,
     "ControlCount": {
       "label": 1,
       "screen": 2
     },
-    "DeserializationLoadTime": 1.2170667
+    "DeserializationLoadTime": 1.3153087
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
