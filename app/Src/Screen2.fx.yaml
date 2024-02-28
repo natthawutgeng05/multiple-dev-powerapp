@@ -83,18 +83,3 @@ Screen2 As screen:
             Width: =4
             ZIndex: =6
 
-    Icon1 As icon.DocumentPDF:
-        Icon: =Icon.DocumentPDF
-        OnSelect: =Set(varPDFBlob,PDF('Screen2'))
-        X: =1118
-        Y: =40
-        ZIndex: =2
-
-    PdfViewer2 As pdfViewer:
-        BorderColor: =RGBA(0, 0, 0, 1)
-        Document: =varPDFBlob
-        Fill: =RGBA(0, 0, 0, 0.5)
-        X: =369
-        Y: =231
-        ZIndex: =3
-

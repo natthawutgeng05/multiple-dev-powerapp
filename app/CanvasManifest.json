@@ -87,6 +87,7 @@
       "rtlsupport": false,
       "showclassicthemes": false,
       "smartemaildatacard": false,
+      "sqlstoredprocedureenabled": false,
       "supportcolumnnamesasidentifiers": false,
       "tabledoesntwraprecords": true,
       "usedisplaynamemetadata": true,
@@ -135,6 +136,7 @@
   "ScreenOrder": [
     "Screen1",
     "Screen2",
-    "Screen3"
+    "Screen3",
+    "Screen4"
   ]
 }

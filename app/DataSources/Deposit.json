@@ -1,0 +1,122 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cra20_deposits",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cra20_deposit",
+    "Name": "Deposit",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cra20_836a67abe6e64fea89cf9b6fb58ca76f": "คอลัมน์ใหม่",
+      "cra20_cash": "Cash",
+      "cra20_datedeposit": "Date Deposit",
+      "cra20_deposit_AsyncOperations": "System Jobs",
+      "cra20_deposit_BulkDeleteFailures": "Bulk Delete Failures",
+      "cra20_deposit_DuplicateBaseRecord": "Duplicate Records (cra20_deposit_DuplicateBaseRecord)",
+      "cra20_deposit_DuplicateMatchingRecord": "Duplicate Records (cra20_deposit_DuplicateMatchingRecord)",
+      "cra20_deposit_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cra20_deposit_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cra20_deposit_ProcessSession": "Process Sessions",
+      "cra20_deposit_SyncErrors": "Sync Errors",
+      "cra20_depositid": "Deposit",
+      "cra20_deposittype": "Deposit Type",
+      "cra20_Rent": "Rent",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Deposit",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Deposit (มุมมอง)",
+    "Name": "_cra20_deposit_views",
+    "RelatedEntityName": "Deposit",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1b8ba984-9124-41b8-8e9e-924e5a5a6b20": "Deposit Lookup View",
+      "2319c7c4-b4e0-496d-9bb4-5e08320ec137": "Deposit Associated View",
+      "a3dc9587-27f5-4ed3-a7c5-fc9d4807af2a": "Deposit Advanced Find View",
+      "ab6d2053-d4c2-48da-acf0-d4b7a590861c": "Active Deposit",
+      "cfb34184-7921-4cd8-944e-5280e1f45434": "Inactive Deposit"
+    }
+  },
+  {
+    "DisplayName": "Deposit Type (Deposit)",
+    "Name": "cra20_deposit_cra20_deposittype",
+    "OptionSetInfoNameMapping": {
+      "146190000": "เงินประกันความเสียหาย",
+      "146190001": "เงินประกันความเสียหาย 2 งวด",
+      "146190002": "เงินมัดจำค่าขนส่ง",
+      "146190003": "เงินมัดจำค่าบริการ"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cra20_deposittype",
+        "OptionSetReferenceEntityName": "Deposit"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cra20_deposittype",
+    "RelatedEntityName": "Deposit",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Deposit)",
+    "Name": "cra20_deposit_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Deposit"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Deposit",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Deposit)",
+    "Name": "cra20_deposit_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Deposit"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Deposit",
+    "Type": "OptionSetInfo"
+  }
+]

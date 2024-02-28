@@ -62,6 +62,20 @@
       "Values": {
         "Information": "997e4693-9321-4451-a3ee-cbc2d9fe7584"
       }
+    },
+    {
+      "Kind": "default.cds_cra20_deposit_forms",
+      "Namespace": "Deposit (ฟอร์ม)",
+      "Values": {
+        "Information": "1802daaf-6cac-4567-a65e-f1b230b1f20b"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_billing_forms",
+      "Namespace": "Billing (ฟอร์ม)",
+      "Values": {
+        "Information": "61bbbd5a-0be2-467f-b67c-a944dd0fcdb2"
+      }
     }
   ]
 }

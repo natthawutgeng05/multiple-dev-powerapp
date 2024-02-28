@@ -84,14 +84,18 @@
     "Version": "1.0"
   },
   "groupContainer": {
+    "CustomGroupControlTemplateName": "",
     "FirstParty": true,
     "Id": "http://microsoft.com/appmagic/groupContainer",
     "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
-    "IsWidgetTemplate": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
     "Name": "groupContainer",
-    "Version": "1.0"
+    "OverridableProperties": {},
+    "Version": "1.3.0"
   },
   "Host": {
     "CustomGroupControlTemplateName": "",
@@ -149,20 +153,6 @@
     "Name": "label",
     "OverridableProperties": {},
     "Version": "2.5.1"
-  },
-  "pdfViewer": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/pdfViewer",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "pdfViewer",
-    "OverridableProperties": {},
-    "Version": "2.3.0"
   },
   "rectangle": {
     "CustomGroupControlTemplateName": "",

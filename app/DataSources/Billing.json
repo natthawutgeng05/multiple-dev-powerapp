@@ -1,0 +1,121 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cra20_billings",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cra20_billing",
+    "Name": "Billing",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cra20_6f014bdd89ff4ff6961576bbdce1f390": "คอลัมน์ใหม่",
+      "cra20_billing_AsyncOperations": "System Jobs",
+      "cra20_billing_BulkDeleteFailures": "Bulk Delete Failures",
+      "cra20_billing_DuplicateBaseRecord": "Duplicate Records (cra20_billing_DuplicateBaseRecord)",
+      "cra20_billing_DuplicateMatchingRecord": "Duplicate Records (cra20_billing_DuplicateMatchingRecord)",
+      "cra20_billing_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cra20_billing_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cra20_billing_ProcessSession": "Process Sessions",
+      "cra20_billing_SyncErrors": "Sync Errors",
+      "cra20_billingby": "Billing by",
+      "cra20_billingid": "Billing",
+      "cra20_dateoncash": "Date on cash",
+      "cra20_period": "Period",
+      "cra20_Rent": "Rent",
+      "cra20_Tenant": "Tenant",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Billing",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Billing (มุมมอง)",
+    "Name": "_cra20_billing_views",
+    "RelatedEntityName": "Billing",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "29fbfebb-70cb-4e03-bdd5-a3c87d83320c": "Billing Associated View",
+      "4a307709-24fa-42e1-84ce-3b7b647718a4": "Billing Lookup View",
+      "7effbd70-68c8-4ae7-b5d0-ea3387cabc83": "Billing Advanced Find View",
+      "c3f0bafe-17bf-4bc7-951f-9029fbaf05aa": "Active Billing",
+      "d9c9b33b-2a4e-4278-8809-8a7e725888fc": "Inactive Billing"
+    }
+  },
+  {
+    "DisplayName": "Billing by (Billing)",
+    "Name": "cra20_billing_cra20_billingby",
+    "OptionSetInfoNameMapping": {
+      "146190000": "บริษัท",
+      "146190001": "ส่วนตัว"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cra20_billingby",
+        "OptionSetReferenceEntityName": "Billing"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cra20_billingby",
+    "RelatedEntityName": "Billing",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Billing)",
+    "Name": "cra20_billing_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Billing"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Billing",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Billing)",
+    "Name": "cra20_billing_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Billing"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Billing",
+    "Type": "OptionSetInfo"
+  }
+]
