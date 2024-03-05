@@ -14,754 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "Paginator_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Paginator_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".IsIconDisable"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 78,
-                  "snippet": {
-                    "text": "GalleryLessorMain"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "GalleryLessorMain"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 95,
-                  "snippet": {
-                    "text": ".AllItems"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 119,
-                  "snippet": {
-                    "text": "varPageSize"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varPageSize"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 100,
-                  "charOffset": 57,
-                  "snippet": {
-                    "text": "FirstN(\r\n            GalleryLessorMain.AllItems,\r\n            varPageSize * varPageNumber\r\n        )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "FirstN"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 168,
-                  "snippet": {
-                    "text": "varPageSize"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varPageSize"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 183,
-                  "snippet": {
-                    "text": "varPageSize"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varPageSize"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 223,
-                  "snippet": {
-                    "text": "GalleryLessorMain"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "GalleryLessorMain"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 240,
-                  "snippet": {
-                    "text": ".AllItems"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 37,
-                  "charOffset": 213,
-                  "snippet": {
-                    "text": "CountRows(GalleryLessorMain.AllItems)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 218,
-                  "charOffset": 41,
-                  "snippet": {
-                    "text": "LastN(\r\n        FirstN(\r\n            GalleryLessorMain.AllItems,\r\n            varPageSize * varPageNumber\r\n        ),\r\n        varPageSize - (varPageSize * varPageNumber - CountRows(GalleryLessorMain.AllItems) )\r\n    )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LastN"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 303,
-                  "snippet": {
-                    "text": "GalleryLessorMain"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "GalleryLessorMain"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 320,
-                  "snippet": {
-                    "text": ".AllItems"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 344,
-                  "snippet": {
-                    "text": "varPageSize"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varPageSize"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 100,
-                  "charOffset": 282,
-                  "snippet": {
-                    "text": "FirstN(\r\n            GalleryLessorMain.AllItems,\r\n            varPageSize * varPageNumber\r\n        )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "FirstN"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 393,
-                  "snippet": {
-                    "text": "varPageSize"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varPageSize"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 145,
-                  "charOffset": 266,
-                  "snippet": {
-                    "text": "LastN(\r\n        FirstN(\r\n            GalleryLessorMain.AllItems,\r\n            varPageSize * varPageNumber\r\n        ),\r\n        varPageSize\r\n    )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LastN"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 414,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "If(\r\n    Paginator_1.IsIconDisable,\r\n    LastN(\r\n        FirstN(\r\n            GalleryLessorMain.AllItems,\r\n            varPageSize * varPageNumber\r\n        ),\r\n        varPageSize - (varPageSize * varPageNumber - CountRows(GalleryLessorMain.AllItems) )\r\n    ),\r\n    LastN(\r\n        FirstN(\r\n            GalleryLessorMain.AllItems,\r\n            varPageSize * varPageNumber\r\n        ),\r\n        varPageSize\r\n    )\r\n)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "LessorList",
-                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.AccessibleLabel"
                 }
               ],
@@ -785,7 +37,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -815,7 +67,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -845,7 +97,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -875,7 +127,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -905,7 +157,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -935,7 +187,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -965,7 +217,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -995,7 +247,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1025,7 +277,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -1055,7 +307,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1085,7 +337,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -1115,7 +367,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1145,7 +397,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -1175,7 +427,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1205,7 +457,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -1235,7 +487,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1265,7 +517,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1295,7 +547,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1325,7 +577,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1354,7 +606,7 @@
             "level": "Medium"
           },
           "ruleId": "app-DataSourceDefaultMaxRowsLimit",
-          "ruleIndex": 6
+          "ruleIndex": 3
         }
       ],
       "tool": {
@@ -1362,51 +614,6 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
-            {
-              "id": "app-ErrInvalidName",
-              "messageStrings": {
-                "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidArgs-Func",
-              "messageStrings": {
-                "issue": {
-                  "text": "The function '{0}' has some invalid arguments."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
             {
               "id": "acc-AccessibleLabelNeeded",
               "messageStrings": {

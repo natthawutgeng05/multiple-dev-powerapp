@@ -14,6 +14,7 @@ LessorList As screen:
             AlignInContainer: =AlignInContainer.SetByContainer
             LayoutMinHeight: =1000
             LayoutMinWidth: =250
+            Width: =Parent.Width
             ZIndex: =1
 
             GalleryShowLessor As gallery.variableTemplateHeightGallery:
@@ -23,17 +24,17 @@ LessorList As screen:
                         Paginator_1.IsIconDisable,
                         LastN(
                             FirstN(
-                                GalleryLessorMain.AllItems,
-                                varPageSize * varPageNumber
+                                GalleryLessorHide.AllItems,
+                                20 * varPageNumber
                             ),
-                            varPageSize - (varPageSize * varPageNumber - CountRows(GalleryLessorMain.AllItems) )
+                            20 - (20 * varPageNumber - CountRows(GalleryLessorHide.AllItems) )
                         ),
                         LastN(
                             FirstN(
-                                GalleryLessorMain.AllItems,
-                                varPageSize * varPageNumber
+                                GalleryLessorHide.AllItems,
+                                20 * varPageNumber
                             ),
-                            varPageSize
+                            20
                         )
                     )
                 Layout: =Layout.Vertical
@@ -42,6 +43,13 @@ LessorList As screen:
                 X: =207
                 Y: =96
                 ZIndex: =1
+
+            Paginator_1 As Paginator:
+                CountAll: =CountRows(GalleryLessorHide.AllItems)
+                Gellary: =GalleryLessorHide.AllItems
+                X: =362
+                Y: =571
+                ZIndex: =2
 
     SideBar_2 As SideBar:
         NavItems: |-
