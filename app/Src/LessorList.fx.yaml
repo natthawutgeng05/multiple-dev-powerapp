@@ -1,0 +1,89 @@
+LessorList As screen:
+
+    SideBar_2 As SideBar:
+        NavItems: |-
+            =If(
+                true,
+                Table(
+                    {
+                        Title: "ตั้งค่าข้อมูล",
+                        Icon: Icon.Settings,
+                        SubMenu: Table(
+                            {
+                                Title: "ผู้ดูแลระบบ",
+                                Screen: LessorList
+                            },
+                            {
+                                Title: "ข้อมูลผู้ให้เช่า",
+                                Screen: LessorList
+                            },
+                            {
+                                Title: "ข้อมูลเช่า",
+                                Screen: LessorList
+                            },
+                            {
+                                Title: "ข้อมูลทรัพย์สิน",
+                                Screen: LessorList
+                            },
+                            {
+                                Title: "ข้อมูลซ่อมแซมทรัพย์สิน",
+                                Screen: LessorList
+                            }
+                        )
+                    },
+                    {
+                        Title: "เช่าทรัพย์สิน",
+                        Icon: Icon.OfficeBuilding,
+                        SubMenu: Table(
+                            {
+                                Title: "เช่าทรัพย์สิน",
+                                Screen: LessorList
+                            }
+                        )
+                    },
+                    {
+                        Title: "ชำระเงิน",
+                        Icon: Icon.Money,
+                        SubMenu: Table(
+                            {
+                                Title: "ออกใบวางบิลค่าน้ำ/ค่าไฟ",
+                                Screen: LessorList
+                            },
+                            {
+                                Title: "ออกใบวางบิลค่าเช่า",
+                                Screen: LessorList
+                            },
+                            {
+                                Title: "ชำระเงิน",
+                                Screen: LessorList
+                            }
+                        )
+                    },
+                    {
+                        Title: "รายงาน",
+                        Icon: Icon.DocumentWithContent,
+                        SubMenu: Table(
+                            {
+                                Title: "รายงาน",
+                                Screen: LessorList
+                            }
+                        )
+                    }
+                ),
+                Table(
+                    {
+                        Title: "รายงาน",
+                        Icon: Icon.DocumentWithContent,
+                        SubMenu: Table(
+                            {
+                                Title: "รายงาน",
+                                Screen: LessorList
+                            }
+                        )
+                    }
+                )
+            )
+
+    Header_2 As Header:
+        X: =SideBar_2.X + SideBar_2.Width
+
