@@ -53,9 +53,9 @@ LessorList As screen:
                     )
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
-                TemplateSize: =280
-                X: =141
-                Y: =192
+                TemplateSize: =340
+                Width: =1059
+                Y: =162
                 ZIndex: =1
 
             Paginator_1 As Paginator:
@@ -69,6 +69,7 @@ LessorList As screen:
                 DropShadow: =DropShadow.None
                 Height: =106
                 LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =10
                 LayoutMode: =LayoutMode.Auto
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -88,6 +89,7 @@ LessorList As screen:
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    PaddingTop: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
                     RadiusTopLeft: =0
@@ -108,11 +110,11 @@ LessorList As screen:
 
                         TextInput1_1 As text:
                             AlignInContainer: =AlignInContainer.Start
-                            Default: ="Text input"
+                            Default: =""
                             ZIndex: =1
 
                         Button2_1 As button:
-                            Text: ="Button"
+                            Text: ="ค้นหา"
                             ZIndex: =2
 
                     Container8 As groupContainer.horizontalAutoLayoutContainer:
@@ -128,7 +130,10 @@ LessorList As screen:
                         ZIndex: =4
 
                         Button3_1 As button:
-                            Text: ="Button"
+                            OnSelect: |-
+                                =NewForm(FormLessor);
+                                Navigate(LessorForm);
+                            Text: ="เพิ่ม"
                             ZIndex: =1
 
     SideBar_2 As SideBar:
