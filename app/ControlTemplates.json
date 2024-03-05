@@ -27,20 +27,6 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
-  "combobox": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/combobox",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "combobox",
-    "OverridableProperties": {},
-    "Version": "2.4.0"
-  },
   "form": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -126,20 +112,6 @@
     "OverridableProperties": {},
     "Version": "2.5.0"
   },
-  "image": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/image",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "image",
-    "OverridableProperties": {},
-    "Version": "2.2.2"
-  },
   "label": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -153,20 +125,6 @@
     "Name": "label",
     "OverridableProperties": {},
     "Version": "2.5.1"
-  },
-  "rectangle": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/shapes/rectangle",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "rectangle",
-    "OverridableProperties": {},
-    "Version": "2.3.0"
   },
   "screen": {
     "CustomGroupControlTemplateName": "",

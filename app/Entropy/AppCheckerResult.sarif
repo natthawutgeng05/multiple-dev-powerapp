@@ -103,10 +103,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 10,
-                  "charOffset": 300,
+                  "charLength": 774,
+                  "charOffset": 127,
                   "snippet": {
-                    "text": "LessorForm"
+                    "text": "Table(\n                {\n                    Tile: \"ผู้ดูแลระบบ\",\n                    Icon: Icon.Add,\n                    Screen: UserList,\n                    ScreenChild: LessorForm\n                },\n                {\n                    Tile: \"ข้อมูลผู้ให้เช่า\",\n                    Icon: Icon.Add,\n                    Screen: LessorList,\n                    ScreenChild: LessorForm\n                },\n                {\n                    Tile: \"ข้อมูลเช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Tile: \"ข้อมูลทรัพย์สิน\",\n                    Screen: Blank()\n                },\n                {\n                    Tile: \"ข้อมูลซ่อมแซมทรัพย์สิน\",\n                    Screen: Blank()\n                }\n            )"
                   }
                 }
               },
@@ -119,15 +119,15 @@
           ],
           "message": {
             "arguments": [
-              "LessorForm"
+              "Table"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -143,10 +143,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 10,
-                  "charOffset": 458,
+                  "charLength": 185,
+                  "charOffset": 346,
                   "snippet": {
-                    "text": "LessorList"
+                    "text": "{\n                    Tile: \"ข้อมูลผู้ให้เช่า\",\n                    Icon: Icon.Add,\n                    Screen: LessorList,\n                    ScreenChild: LessorForm\n                }"
                   }
                 }
               },
@@ -158,136 +158,13 @@
             }
           ],
           "message": {
-            "arguments": [
-              "LessorList"
-            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SideBar.NavItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SideBar.NavItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 503,
-                  "snippet": {
-                    "text": "LessorForm"
-                  }
-                }
-              },
-              "properties": {
-                "member": "NavItems",
-                "module": "SideBar",
-                "type": "SideBar"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LessorForm"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SideBar.NavItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SideBar.NavItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 2097,
-                  "snippet": {
-                    "text": "LessorList"
-                  }
-                }
-              },
-              "properties": {
-                "member": "NavItems",
-                "module": "SideBar",
-                "type": "SideBar"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LessorList"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SideBar.NavItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SideBar.NavItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 2142,
-                  "snippet": {
-                    "text": "LessorForm"
-                  }
-                }
-              },
-              "properties": {
-                "member": "NavItems",
-                "module": "SideBar",
-                "type": "SideBar"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LessorForm"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleId": "app-ErrTableDoesNotAcceptThisType",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -334,18 +211,146 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen4"
+                  "fullyQualifiedName": "Dashboard.SideBar_1.NavItems"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen4",
+                  "fullyQualifiedName": "Dashboard.SideBar_1.NavItems",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": "isAdmin"
+                  }
                 }
               },
               "properties": {
-                "module": "Screen4",
-                "type": "Screen4"
+                "member": "NavItems",
+                "module": "Dashboard",
+                "type": "Dashboard.SideBar_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "isAdmin"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.SideBar_1.NavItems"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.SideBar_1.NavItems",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 257,
+                  "snippet": {
+                    "text": "UserList"
+                  }
+                }
+              },
+              "properties": {
+                "member": "NavItems",
+                "module": "Dashboard",
+                "type": "Dashboard.SideBar_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "UserList"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.SideBar_1.NavItems"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.SideBar_1.NavItems",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 774,
+                  "charOffset": 127,
+                  "snippet": {
+                    "text": "Table(\n                {\n                    Tile: \"ผู้ดูแลระบบ\",\n                    Icon: Icon.Add,\n                    Screen: UserList,\n                    ScreenChild: LessorForm\n                },\n                {\n                    Tile: \"ข้อมูลผู้ให้เช่า\",\n                    Icon: Icon.Add,\n                    Screen: LessorList,\n                    ScreenChild: LessorForm\n                },\n                {\n                    Tile: \"ข้อมูลเช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Tile: \"ข้อมูลทรัพย์สิน\",\n                    Screen: Blank()\n                },\n                {\n                    Tile: \"ข้อมูลซ่อมแซมทรัพย์สิน\",\n                    Screen: Blank()\n                }\n            )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "NavItems",
+                "module": "Dashboard",
+                "type": "Dashboard.SideBar_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Table"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.SideBar_1.NavItems"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.SideBar_1.NavItems",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 185,
+                  "charOffset": 346,
+                  "snippet": {
+                    "text": "{\n                    Tile: \"ข้อมูลผู้ให้เช่า\",\n                    Icon: Icon.Add,\n                    Screen: LessorList,\n                    ScreenChild: LessorForm\n                }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "NavItems",
+                "module": "Dashboard",
+                "type": "Dashboard.SideBar_1"
               }
             }
           ],
@@ -353,9 +358,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Low"
+            "level": "High"
           },
-          "ruleId": "acc-ReadableScreenNameNeeded",
+          "ruleId": "app-ErrTableDoesNotAcceptThisType",
           "ruleIndex": 2
         },
         {
@@ -363,48 +368,106 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3"
+                  "fullyQualifiedName": "Dashboard.SideBar_1.NavItems"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3",
+                  "fullyQualifiedName": "Dashboard.SideBar_1.NavItems",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2202,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "If(\n    isAdmin,\n    Table(\n        {\n            Tile: \"ตั้งค่าข้อมูล\",\n            Icon: Icon.Settings,\n            SubMenu: Table(\n                {\n                    Tile: \"ผู้ดูแลระบบ\",\n                    Icon: Icon.Add,\n                    Screen: UserList,\n                    ScreenChild: LessorForm\n                },\n                {\n                    Tile: \"ข้อมูลผู้ให้เช่า\",\n                    Icon: Icon.Add,\n                    Screen: LessorList,\n                    ScreenChild: LessorForm\n                },\n                {\n                    Tile: \"ข้อมูลเช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Tile: \"ข้อมูลทรัพย์สิน\",\n                    Screen: Blank()\n                },\n                {\n                    Tile: \"ข้อมูลซ่อมแซมทรัพย์สิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Tile: \"เช่าทรัพย์สิน\",\n            Icon: Icon.OfficeBuilding,\n            SubMenu: Table(\n                {\n                    Tile: \"เช่าทรัพย์สิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Tile: \"ชำระเงิน\",\n            Icon: Icon.Money,\n            SubMenu: Table(\n                {\n                    Tile: \"ออกใบวางบิลค่าน้ำ/ค่าไฟ\",\n                    Screen: Blank()\n                },\n                {\n                    Tile: \"ออกใบวางบิลค่าเช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Tile: \"ชำระเงิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Tile: \"รายงาน\",\n            Icon: Icon.DocumentWithContent,\n            SubMenu: Table(\n                {\n                    Tile: \"รายงาน\",\n                    Screen: Blank()\n                }\n            )\n        }\n    ),\n    Table(\n        {\n            Tile: \"รายงาน\",\n            Icon: Icon.DocumentWithContent,\n            SubMenu: Table(\n                {\n                    Tile: \"รายงาน\",\n                    Screen: LessorList,\n                    ScreenChild: LessorForm\n                }\n            )\n        }\n    )\n)"
+                  }
                 }
               },
               "properties": {
-                "module": "Screen3",
-                "type": "Screen3"
+                "member": "NavItems",
+                "module": "Dashboard",
+                "type": "Dashboard.SideBar_1"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "If"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "Low"
+            "level": "High"
           },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 2
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.Form1.'Tenant name_DataCard1'.DataCardValue1.AccessibleLabel"
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Lessor Name_DataCard1'.Update"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.Form1.'Tenant name_DataCard1'.DataCardValue1.AccessibleLabel",
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Lessor Name_DataCard1'.Update",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardValue1"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.'Tenant name_DataCard1'.DataCardValue1"
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Lessor Name_DataCard1'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardValue1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Lessor Name_DataCard1'.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Lessor Name_DataCard1'.Update",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Lessor Name_DataCard1'"
               }
             }
           ],
@@ -412,9 +475,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 3
         },
         {
@@ -422,19 +485,66 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.Form1.Title_DataCard1.DataCardValue2.AccessibleLabel"
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Number_DataCard1.Update"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.Form1.Title_DataCard1.DataCardValue2.AccessibleLabel",
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Number_DataCard1.Update",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardValue2"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.Title_DataCard1.DataCardValue2"
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Number_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardValue2"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Number_DataCard1.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Number_DataCard1.Update",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Number_DataCard1"
               }
             }
           ],
@@ -442,9 +552,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 3
         },
         {
@@ -452,19 +562,66 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.Form1.Type_DataCard1.DataCardValue3.AccessibleLabel"
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Village No_DataCard1'.Update"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.Form1.Type_DataCard1.DataCardValue3.AccessibleLabel",
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Village No_DataCard1'.Update",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardValue3"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.Type_DataCard1.DataCardValue3"
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Village No_DataCard1'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardValue3"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Village No_DataCard1'.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Village No_DataCard1'.Update",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Village No_DataCard1'"
               }
             }
           ],
@@ -472,9 +629,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 3
         },
         {
@@ -482,19 +639,66 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.Form1.ID_DataCard1.DataCardValue4.AccessibleLabel"
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Lane_DataCard1.Update"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.Form1.ID_DataCard1.DataCardValue4.AccessibleLabel",
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Lane_DataCard1.Update",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardValue4"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.ID_DataCard1.DataCardValue4"
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Lane_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardValue4"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Lane_DataCard1.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Lane_DataCard1.Update",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Lane_DataCard1"
               }
             }
           ],
@@ -502,9 +706,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 3
         },
         {
@@ -512,19 +716,66 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.Form1.Jobs_DataCard1.DataCardValue5.AccessibleLabel"
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Sub-district_DataCard1'.Update"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.Form1.Jobs_DataCard1.DataCardValue5.AccessibleLabel",
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Sub-district_DataCard1'.Update",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardValue5"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.Jobs_DataCard1.DataCardValue5"
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Sub-district_DataCard1'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardValue5"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Sub-district_DataCard1'.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Sub-district_DataCard1'.Update",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Sub-district_DataCard1'"
               }
             }
           ],
@@ -532,9 +783,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 3
         },
         {
@@ -542,19 +793,66 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.Form1.Building_DataCard1.DataCardValue6.AccessibleLabel"
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.District_DataCard1.Update"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.Form1.Building_DataCard1.DataCardValue6.AccessibleLabel",
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.District_DataCard1.Update",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardValue6"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.Building_DataCard1.DataCardValue6"
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.District_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardValue6"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.District_DataCard1.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.District_DataCard1.Update",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.District_DataCard1"
               }
             }
           ],
@@ -562,9 +860,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 3
         },
         {
@@ -572,19 +870,66 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.Form1.'Tenant address_DataCard1'.DataCardValue7.AccessibleLabel"
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Province_DataCard1.Update"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.Form1.'Tenant address_DataCard1'.DataCardValue7.AccessibleLabel",
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Province_DataCard1.Update",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardValue7"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.'Tenant address_DataCard1'.DataCardValue7"
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Province_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardValue7"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Province_DataCard1.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Province_DataCard1.Update",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Province_DataCard1"
               }
             }
           ],
@@ -592,9 +937,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 3
         },
         {
@@ -602,19 +947,66 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.Form1.Telephone_DataCard1.DataCardValue8.AccessibleLabel"
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Postal Code_DataCard1'.Update"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.Form1.Telephone_DataCard1.DataCardValue8.AccessibleLabel",
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Postal Code_DataCard1'.Update",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardValue8"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.Telephone_DataCard1.DataCardValue8"
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Postal Code_DataCard1'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardValue8"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Postal Code_DataCard1'.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Postal Code_DataCard1'.Update",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.'Postal Code_DataCard1'"
               }
             }
           ],
@@ -622,9 +1014,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 3
         },
         {
@@ -632,19 +1024,66 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.Form1.'Reference name_DataCard1'.DataCardValue9.AccessibleLabel"
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Fax_DataCard1.Update"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.Form1.'Reference name_DataCard1'.DataCardValue9.AccessibleLabel",
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Fax_DataCard1.Update",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 15,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardValue10"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.'Reference name_DataCard1'.DataCardValue9"
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Fax_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardValue10"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Fax_DataCard1.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Fax_DataCard1.Update",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 15,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Fax_DataCard1"
               }
             }
           ],
@@ -652,9 +1091,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 3
         },
         {
@@ -662,19 +1101,66 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.Form1.'Reference telephone_DataCard1'.DataCardValue10.AccessibleLabel"
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Taxpayer_number_DataCard1.Update"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.Form1.'Reference telephone_DataCard1'.DataCardValue10.AccessibleLabel",
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Taxpayer_number_DataCard1.Update",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 15,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataCardValue11"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.'Reference telephone_DataCard1'.DataCardValue10"
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Taxpayer_number_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataCardValue11"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Taxpayer_number_DataCard1.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Taxpayer_number_DataCard1.Update",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 15,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.FormLessor.Taxpayer_number_DataCard1"
               }
             }
           ],
@@ -682,488 +1168,10 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.Form1.Email_DataCard1.DataCardValue11.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.Form1.Email_DataCard1.DataCardValue11.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.Email_DataCard1.DataCardValue11"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.Form1.Bank_DataCard1.DataCardValue12.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.Form1.Bank_DataCard1.DataCardValue12.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.Bank_DataCard1.DataCardValue12"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.Form1.'Bank branch_DataCard1'.DataCardValue13.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.Form1.'Bank branch_DataCard1'.DataCardValue13.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.'Bank branch_DataCard1'.DataCardValue13"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.Form1.'Account number_DataCard1'.DataCardValue14.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.Form1.'Account number_DataCard1'.DataCardValue14.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.'Account number_DataCard1'.DataCardValue14"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.Form1.Condition_DataCard1.DataCardValue15.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.Form1.Condition_DataCard1.DataCardValue15.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.Condition_DataCard1.DataCardValue15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.Form1.'Address billing_DataCard1'.DataCardValue16.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.Form1.'Address billing_DataCard1'.DataCardValue16.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.Form1.'Address billing_DataCard1'.DataCardValue16"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Screen1",
-                "type": "Screen1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Gallery2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Gallery2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen1",
-                "type": "Screen1.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Gallery2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Gallery2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen1",
-                "type": "Screen1.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Screen2",
-                "type": "Screen2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.Gallery1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.Gallery1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.Gallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.Gallery1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.Gallery1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen2",
-                "type": "Screen2.Gallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SideBar",
-                "type": "SideBar.ContainerNav.GalleryMainMenu"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "SideBar",
-                "type": "SideBar.ContainerNav.GalleryMainMenu"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SideBar",
-                "type": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "SideBar",
-                "type": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1193,7 +1201,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1223,7 +1231,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1253,7 +1261,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1283,7 +1291,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1313,7 +1321,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1343,7 +1351,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1373,7 +1381,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1403,7 +1411,277 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.Container3.Icon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.Container3.Icon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.Container3.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.Container3.Icon1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorForm.ContainerMainBody_1.ContainerBody_1.Container3.Icon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "LessorForm",
+                "type": "LessorForm.ContainerMainBody_1.ContainerBody_1.Container3.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.Container6.Container7.Container9.TextInput1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.Container6.Container7.Container9.TextInput1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "LessorList",
+                "type": "LessorList.ContainerMainBody.ContainerBody.Container6.Container7.Container9.TextInput1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "LessorList",
+                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "LessorList",
+                "type": "LessorList.ContainerMainBody.ContainerBody.GalleryShowLessor"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorList.GalleryLessorHide.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorList.GalleryLessorHide.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "LessorList",
+                "type": "LessorList.GalleryLessorHide"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LessorList.GalleryLessorHide.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LessorList.GalleryLessorHide.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "LessorList",
+                "type": "LessorList.GalleryLessorHide"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.colorSecondary"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.colorSecondary",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "colorSecondary",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.currentUser"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.currentUser",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "currentUser",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1432,7 +1710,7 @@
             "level": "Medium"
           },
           "ruleId": "app-DataSourceDefaultMaxRowsLimit",
-          "ruleIndex": 5
+          "ruleIndex": 7
         }
       ],
       "tool": {
@@ -1472,20 +1750,34 @@
               }
             },
             {
-              "id": "acc-ReadableScreenNameNeeded",
+              "id": "app-ErrTableDoesNotAcceptThisType",
               "messageStrings": {
                 "issue": {
-                  "text": "Revise screen name"
+                  "text": "Incompatible type. The item you are trying to put into a table has a type that is not compatible with the table."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Give the screen  a title that describes what's on the screen or what it's used for."
+                  "Ensure that the type of the item you want to push into the table is compatible with the table. You may need to convert the type of the item, for instance, to a record."
                 ],
-                "level": "Low",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidDot",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid use of '.'"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
               }
             },
             {
@@ -1523,20 +1815,37 @@
               }
             },
             {
-              "id": "app-DataSourceDefaultMaxRowsLimit",
+              "id": "app-UnusedVariables",
               "messageStrings": {
                 "issue": {
-                  "text": "Data row limit for non-delegable queries is more than 500"
+                  "text": "ตัวแปรที่ไม่ได้ใช้"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Update 'Data row limit for non-delegable queries' in the advanced app settings."
+                  "นำตัวแปรที่ไม่ได้ใช้ออก"
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "A 'data row limit' more than 500 may result in a slower app when running non-delegable queries, because the app will have to process every row itself, rather than running the query on the server."
+                "whyFix": "มีการประกาศตัวแปรนี้ แต่ไม่ได้อ้างอิงโดยตัวควบคุมใดๆ ดังนั้นจึงไม่จำเป็นต้องใช้"
+              }
+            },
+            {
+              "id": "app-DataSourceDefaultMaxRowsLimit",
+              "messageStrings": {
+                "issue": {
+                  "text": "ขีดจำกัดของแถวข้อมูลสำหรับแบบสอบถามที่ไม่สามารถมอบหมายได้มากกว่า 500"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "อัปเดต \"ขีดจำกัดของแถวข้อมูลสำหรับคิวรีที่ไม่สามารถมอบหมายได้\" ในการตั้งค่าแอปขั้นสูง"
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "\"ขีดจำกัดของแถวข้อมูล\" ที่มากกว่า 500 อาจส่งผลให้แอปช้าลงเมื่อเรียกใช้คิวรีที่ไม่สามารถมอบหมายได้ เนื่องจากแอปจะต้องประมวลผลทุกแถวเองแทนที่จะเรียกใช้คิวรีบนเซิร์ฟเวอร์"
               }
             }
           ],
