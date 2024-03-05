@@ -3,7 +3,7 @@ SideBar As CanvasComponent:
     Height: =Max(App.Height, App.MinScreenHeight)
     NavItems: |-
         =If(
-            isAdmin,
+            true,
             Table(
                 {
                     Tile: "ตั้งค่าข้อมูล",
@@ -12,14 +12,12 @@ SideBar As CanvasComponent:
                         {
                             Tile: "ผู้ดูแลระบบ",
                             Icon: Icon.Add,
-                            Screen: UserList,
-                            ScreenChild: LessorForm
+                            Screen: Blank()
                         },
                         {
                             Tile: "ข้อมูลผู้ให้เช่า",
                             Icon: Icon.Add,
-                            Screen: LessorList,
-                            ScreenChild: LessorForm
+                            Screen: Blank()
                         },
                         {
                             Tile: "ข้อมูลเช่า",
@@ -81,8 +79,7 @@ SideBar As CanvasComponent:
                     SubMenu: Table(
                         {
                             Tile: "รายงาน",
-                            Screen: LessorList,
-                            ScreenChild: LessorForm
+                            Screen: Blank()
                         }
                     )
                 }

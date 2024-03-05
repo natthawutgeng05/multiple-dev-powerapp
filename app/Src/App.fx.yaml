@@ -1,5 +1,8 @@
 App As appinfo:
     BackEnabled: =true
+    ConfirmExit: =true
+    ConfirmExitMessage: ="คุณต้องการออกจากระบบ?"
+    StartScreen: =Dashboard
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
