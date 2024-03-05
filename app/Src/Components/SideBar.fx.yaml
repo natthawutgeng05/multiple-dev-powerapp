@@ -6,67 +6,67 @@ SideBar As CanvasComponent:
             true,
             Table(
                 {
-                    Tile: "ตั้งค่าข้อมูล",
+                    Title: "ตั้งค่าข้อมูล",
                     Icon: Icon.Settings,
                     SubMenu: Table(
                         {
-                            Tile: "ผู้ดูแลระบบ",
+                            Title: "ผู้ดูแลระบบ",
+                            Icon: Icon.Add,
+                            Screen: Dashboard
+                        },
+                        {
+                            Title: "ข้อมูลผู้ให้เช่า",
                             Icon: Icon.Add,
                             Screen: Blank()
                         },
                         {
-                            Tile: "ข้อมูลผู้ให้เช่า",
-                            Icon: Icon.Add,
+                            Title: "ข้อมูลเช่า",
                             Screen: Blank()
                         },
                         {
-                            Tile: "ข้อมูลเช่า",
+                            Title: "ข้อมูลทรัพย์สิน",
                             Screen: Blank()
                         },
                         {
-                            Tile: "ข้อมูลทรัพย์สิน",
-                            Screen: Blank()
-                        },
-                        {
-                            Tile: "ข้อมูลซ่อมแซมทรัพย์สิน",
+                            Title: "ข้อมูลซ่อมแซมทรัพย์สิน",
                             Screen: Blank()
                         }
                     )
                 },
                 {
-                    Tile: "เช่าทรัพย์สิน",
+                    Title: "เช่าทรัพย์สิน",
                     Icon: Icon.OfficeBuilding,
                     SubMenu: Table(
                         {
-                            Tile: "เช่าทรัพย์สิน",
+                            Title: "เช่าทรัพย์สิน",
                             Screen: Blank()
                         }
                     )
                 },
                 {
-                    Tile: "ชำระเงิน",
+                    Title: "ชำระเงิน",
                     Icon: Icon.Money,
                     SubMenu: Table(
                         {
-                            Tile: "ออกใบวางบิลค่าน้ำ/ค่าไฟ",
+                            Title: "ออกใบวางบิลค่าน้ำ/ค่าไฟ",
                             Screen: Blank()
                         },
                         {
-                            Tile: "ออกใบวางบิลค่าเช่า",
+                            Title: "ออกใบวางบิลค่าเช่า",
                             Screen: Blank()
                         },
                         {
-                            Tile: "ชำระเงิน",
+                            Title: "ชำระเงิน",
                             Screen: Blank()
                         }
                     )
                 },
                 {
-                    Tile: "รายงาน",
+                    Title: "รายงาน",
                     Icon: Icon.DocumentWithContent,
                     SubMenu: Table(
                         {
-                            Tile: "รายงาน",
+                            Title: "รายงาน",
                             Screen: Blank()
                         }
                     )
@@ -74,11 +74,11 @@ SideBar As CanvasComponent:
             ),
             Table(
                 {
-                    Tile: "รายงาน",
+                    Title: "รายงาน",
                     Icon: Icon.DocumentWithContent,
                     SubMenu: Table(
                         {
-                            Tile: "รายงาน",
+                            Title: "รายงาน",
                             Screen: Blank()
                         }
                     )
@@ -90,7 +90,7 @@ SideBar As CanvasComponent:
     Y: =0
     ZIndex: =1
 
-    ContainerNav As groupContainer.manualLayoutContainer:
+    ContainerSidebar As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Fill: =RGBA(7, 22, 81, 1)
         Height: =Parent.Height
@@ -156,7 +156,7 @@ SideBar As CanvasComponent:
                 Y: =30
                 ZIndex: =1
 
-                Button7 As button:
+                ButtonItem As button:
                     Align: =Align.Left
                     BorderThickness: =0
                     Color: |

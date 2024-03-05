@@ -46,7 +46,7 @@
       "enablelargefilesindataverseoffline": false,
       "enablelegacybarcodescanner": false,
       "enableonstart": true,
-      "enableonstartnavigate": false,
+      "enableonstartnavigate": true,
       "enablepcfmoderndatasets": true,
       "enablerowscopeonetonexpand": false,
       "enablerpawarecomponentdependency": true,
@@ -101,7 +101,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 2,
+    "BindingErrorCount": 5,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 1000,
     "DocumentAppType": "DesktopOrTablet",

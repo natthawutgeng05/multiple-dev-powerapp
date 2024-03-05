@@ -14,40 +14,39 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.Button7.Color"
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.Title.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.Button7.Color",
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.Title.Text",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1,
-                  "charOffset": 26,
+                  "charLength": 5,
+                  "charOffset": 8,
                   "snippet": {
-                    "text": "="
+                    "text": ".Tile"
                   }
                 }
               },
               "properties": {
-                "member": "Color",
+                "member": "Text",
                 "module": "SideBar",
-                "type": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.Button7"
+                "type": "SideBar.ContainerSidebar.GalleryMainMenu.Title"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Control",
-              "ObjNull"
+              "Tile"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleId": "app-ErrInvalidName",
           "ruleIndex": 0
         },
         {
@@ -55,12 +54,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.Button7.OnSelect"
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.Button7.OnSelect",
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem.OnSelect",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -74,18 +73,142 @@
               "properties": {
                 "member": "OnSelect",
                 "module": "SideBar",
-                "type": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.Button7"
+                "type": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "Screen"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrNotAccessibleInCurrentContext",
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 36,
+                  "snippet": {
+                    "text": ".Screen"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "SideBar",
+                "type": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Screen"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 26,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "SideBar",
+                "type": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Control",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Tile"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "SideBar",
+                "type": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Tile"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -630,66 +753,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Dashboard.Gallery2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Dashboard.Gallery2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Dashboard",
-                "type": "Dashboard.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Dashboard.Gallery2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Dashboard.Gallery2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Dashboard",
-                "type": "Dashboard.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen2"
                 }
               ],
@@ -779,19 +842,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.AccessibleLabel"
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.AccessibleLabel",
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SideBar",
-                "type": "SideBar.ContainerNav.GalleryMainMenu"
+                "type": "SideBar.ContainerSidebar.GalleryMainMenu"
               }
             }
           ],
@@ -809,19 +872,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.TabIndex"
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.TabIndex",
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "SideBar",
-                "type": "SideBar.ContainerNav.GalleryMainMenu"
+                "type": "SideBar.ContainerSidebar.GalleryMainMenu"
               }
             }
           ],
@@ -839,19 +902,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.AccessibleLabel"
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.AccessibleLabel",
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SideBar",
-                "type": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu"
+                "type": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu"
               }
             }
           ],
@@ -869,19 +932,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.TabIndex"
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu.TabIndex",
+                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "SideBar",
-                "type": "SideBar.ContainerNav.GalleryMainMenu.GallerySubMenu"
+                "type": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu"
               }
             }
           ],
@@ -1139,6 +1202,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.currentUser"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.currentUser",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "currentUser",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.colorSecondary"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.colorSecondary",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "colorSecondary",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.colorPrimary"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.colorPrimary",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "colorPrimary",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],
@@ -1161,7 +1314,7 @@
             "level": "Medium"
           },
           "ruleId": "app-DataSourceDefaultMaxRowsLimit",
-          "ruleIndex": 5
+          "ruleIndex": 6
         }
       ],
       "tool": {
@@ -1169,6 +1322,23 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
             {
               "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
               "messageStrings": {
@@ -1182,20 +1352,6 @@
                   "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
                   "If you’re comparing records or tables, the field or column types must match exactly."
                 ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrNotAccessibleInCurrentContext",
-              "messageStrings": {
-                "issue": {
-                  "text": "The specified property is not accessible in this context."
-                }
-              },
-              "properties": {
-                "componentType": "app",
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
@@ -1250,6 +1406,23 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+              }
+            },
+            {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused variable"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused variable."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             },
             {
