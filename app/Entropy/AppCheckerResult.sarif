@@ -14,46 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.Title.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.Title.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Tile"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "SideBar",
-                "type": "SideBar.ContainerSidebar.GalleryMainMenu.Title"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Tile"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "SideBar.ContainerSidebar.GalleryMainMenu.GallerySubMenu.ButtonItem.OnSelect"
                 }
               ],

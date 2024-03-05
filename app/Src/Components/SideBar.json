@@ -1037,9 +1037,9 @@
                 "Rules": [
                   {
                     "Category": "Data",
-                    "InvariantScript": "ThisItem.Tile",
+                    "InvariantScript": "ThisItem.Title",
                     "Property": "Text",
-                    "RuleProviderType": "Unknown"
+                    "RuleProviderType": "User"
                   },
                   {
                     "Category": "Data",
@@ -1962,9 +1962,9 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "If(\r\n    App.ActiveScreen = ThisItem.Screen,\r\n    RGBA(249, 104, 71, 1),\r\n    RGBA(227, 241, 247, 1)\r\n)\r\n",
+                        "InvariantScript": "If(\r\n    App.ActiveScreen = ThisItem.Screen,\r\n    RGBA(249, 104, 71, 1),\r\n    RGBA(227, 241, 247, 1)\r\n)\r\n\r\n",
                         "Property": "Color",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
@@ -2871,12 +2871,12 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638452182182536740",
+    "LastModifiedTimestamp": "638452183155790927",
     "Name": "SideBar",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "If(\n    true,\n    Table(\n        {\n            Title: \"ตั้งค่าข้อมูล\",\n            Icon: Icon.Settings,\n            SubMenu: Table(\n                {\n                    Title: \"ผู้ดูแลระบบ\",\n                    Icon: Icon.Add,\n                    Screen: Dashboard\n                },\n                {\n                    Title: \"ข้อมูลผู้ให้เช่า\",\n                    Icon: Icon.Add,\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ข้อมูลเช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ข้อมูลทรัพย์สิน\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ข้อมูลซ่อมแซมทรัพย์สิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Title: \"เช่าทรัพย์สิน\",\n            Icon: Icon.OfficeBuilding,\n            SubMenu: Table(\n                {\n                    Title: \"เช่าทรัพย์สิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Title: \"ชำระเงิน\",\n            Icon: Icon.Money,\n            SubMenu: Table(\n                {\n                    Title: \"ออกใบวางบิลค่าน้ำ/ค่าไฟ\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ออกใบวางบิลค่าเช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ชำระเงิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Title: \"รายงาน\",\n            Icon: Icon.DocumentWithContent,\n            SubMenu: Table(\n                {\n                    Title: \"รายงาน\",\n                    Screen: Blank()\n                }\n            )\n        }\n    ),\n    Table(\n        {\n            Title: \"รายงาน\",\n            Icon: Icon.DocumentWithContent,\n            SubMenu: Table(\n                {\n                    Title: \"รายงาน\",\n                    Screen: Blank()\n                }\n            )\n        }\n    )\n)",
+        "InvariantScript": "If(\n    true,\n    Table(\n        {\n            Title: \"ตั้งค่าข้อมูล\",\n            Icon: Icon.Settings,\n            SubMenu: Table(\n                {\n                    Title: \"ผู้ดูแลระบบ\",\n                    Icon: Icon.Add,\n                    Screen: 'Dashboard'\n                },\n                {\n                    Title: \"ข้อมูลผู้ให้เช่า\",\n                    Icon: Icon.Add,\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ข้อมูลเช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ข้อมูลทรัพย์สิน\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ข้อมูลซ่อมแซมทรัพย์สิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Title: \"เช่าทรัพย์สิน\",\n            Icon: Icon.OfficeBuilding,\n            SubMenu: Table(\n                {\n                    Title: \"เช่าทรัพย์สิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Title: \"ชำระเงิน\",\n            Icon: Icon.Money,\n            SubMenu: Table(\n                {\n                    Title: \"ออกใบวางบิลค่าน้ำ/ค่าไฟ\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ออกใบวางบิลค่าเช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ชำระเงิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Title: \"รายงาน\",\n            Icon: Icon.DocumentWithContent,\n            SubMenu: Table(\n                {\n                    Title: \"รายงาน\",\n                    Screen: Blank()\n                }\n            )\n        }\n    ),\n    Table(\n        {\n            Title: \"รายงาน\",\n            Icon: Icon.DocumentWithContent,\n            SubMenu: Table(\n                {\n                    Title: \"รายงาน\",\n                    Screen: Blank()\n                }\n            )\n        }\n    )\n)",
         "Property": "NavItems",
         "RuleProviderType": "System"
       },
@@ -2946,7 +2946,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638452182182536740",
+  "LastModifiedTimestamp": "638452183155790927",
   "Name": "be2fe9ac34534857998e809f77ba9405",
   "OverridableProperties": {},
   "TemplateOriginalName": "aeb9853246be4570a4773227f3e40b2f",
