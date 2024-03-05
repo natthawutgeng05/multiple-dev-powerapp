@@ -15,19 +15,19 @@ SideBar As CanvasComponent:
                         },
                         {
                             Title: "ข้อมูลผู้ให้เช่า",
-                            Screen: Blank()
+                            Screen: Dashboard
                         },
                         {
                             Title: "ข้อมูลเช่า",
-                            Screen: Blank()
+                            Screen: Dashboard
                         },
                         {
                             Title: "ข้อมูลทรัพย์สิน",
-                            Screen: Blank()
+                            Screen: Dashboard
                         },
                         {
                             Title: "ข้อมูลซ่อมแซมทรัพย์สิน",
-                            Screen: Blank()
+                            Screen: Dashboard
                         }
                     )
                 },
@@ -37,7 +37,7 @@ SideBar As CanvasComponent:
                     SubMenu: Table(
                         {
                             Title: "เช่าทรัพย์สิน",
-                            Screen: Blank()
+                            Screen: Dashboard
                         }
                     )
                 },
@@ -47,15 +47,15 @@ SideBar As CanvasComponent:
                     SubMenu: Table(
                         {
                             Title: "ออกใบวางบิลค่าน้ำ/ค่าไฟ",
-                            Screen: Blank()
+                            Screen: Dashboard
                         },
                         {
                             Title: "ออกใบวางบิลค่าเช่า",
-                            Screen: Blank()
+                            Screen: Dashboard
                         },
                         {
                             Title: "ชำระเงิน",
-                            Screen: Blank()
+                            Screen: Dashboard
                         }
                     )
                 },
@@ -65,7 +65,7 @@ SideBar As CanvasComponent:
                     SubMenu: Table(
                         {
                             Title: "รายงาน",
-                            Screen: Blank()
+                            Screen: Dashboard
                         }
                     )
                 }
@@ -77,7 +77,7 @@ SideBar As CanvasComponent:
                     SubMenu: Table(
                         {
                             Title: "รายงาน",
-                            Screen: Blank()
+                            Screen: Dashboard
                         }
                     )
                 }
@@ -157,26 +157,16 @@ SideBar As CanvasComponent:
                 ButtonItem As button:
                     Align: =Align.Left
                     BorderThickness: =0
-                    Color: |-
+                    Color: |
                         =If(
-                            App.ActiveScreen.Name,
-                            RGBA(
-                                249,
-                                104,
-                                71,
-                                1
-                            ),
-                            RGBA(
-                                227,
-                                241,
-                                247,
-                                1
-                            )
+                            App.ActiveScreen = ThisItem.Screen,
+                            RGBA(249, 104, 71, 1),
+                            RGBA(227, 241, 247, 1)
                         )
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =30
                     HoverFill: =ColorFade(RGBA(249,104,71,1),-20%)
-                    OnSelect: =//Navigate(ThisItem.Screen);
+                    OnSelect: =Navigate(ThisItem.Screen);
                     PressedColor: =RGBA(227, 241, 247, 1)
                     PressedFill: =RGBA(249, 104, 71, 1)
                     Size: =10

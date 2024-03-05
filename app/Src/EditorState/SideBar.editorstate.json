@@ -2118,7 +2118,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "If(\n    true,\n    Table(\n        {\n            Ti: \"ตั้งค่าข้อมูล\",\n            Icon: Icon.Settings,\n            SubMenu: Table(\n                {\n                    Ti: \"ผู้ดูแลระบบ\",\n                    Icon: Icon.Add,\n                    Screen: Dashboard\n                },\n                {\n                    Ti: \"ข้อมูลผู้ให้เช่า\",\n                    Icon: Icon.Add,\n                    Screen: Blank()\n                },\n                {\n                    Ti: \"ข้อมูลเช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Ti: \"ข้อมูลทรัพย์สิน\",\n                    Screen: Blank()\n                },\n                {\n                    Ti: \"ข้อมูลซ่อมแซมทรัพย์สิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Ti: \"เช่าทรัพย์สิน\",\n            Icon: Icon.OfficeBuilding,\n            SubMenu: Table(\n                {\n                    Ti: \"เช่าทรัพย์สิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Ti: \"ชำระเงิน\",\n            Icon: Icon.Money,\n            SubMenu: Table(\n                {\n                    Ti: \"ออกใบวางบิลค่าน้ำ/ค่าไฟ\",\n                    Screen: Blank()\n                },\n                {\n                    Ti: \"ออกใบวางบิลค่าเช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Ti: \"ชำระเงิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Ti: \"รายงาน\",\n            Icon: Icon.DocumentWithContent,\n            SubMenu: Table(\n                {\n                    Ti: \"รายงาน\",\n                    Screen: Blank()\n                }\n            )\n        }\n    ),\n    Table(\n        {\n            Ti: \"รายงาน\",\n            Icon: Icon.DocumentWithContent,\n            SubMenu: Table(\n                {\n                    Ti: \"รายงาน\",\n                    Screen: Blank()\n                }\n            )\n        }\n    )\n)",
+          "AutoRuleBindingString": "If(\n    true,\n    Table(\n        {\n            Title: \"ตั้งค่าข้อมูล\",\n            Icon: Icon.Settings,\n            SubMenu: Table(\n                {\n                    Title: \"ผู้ดูแลระบบ\",\n                    Screen: Dashboard\n                },\n                {\n                    Title: \"ข้อมูลผู้ให้เช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ข้อมูลเช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ข้อมูลทรัพย์สิน\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ข้อมูลซ่อมแซมทรัพย์สิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Title: \"เช่าทรัพย์สิน\",\n            Icon: Icon.OfficeBuilding,\n            SubMenu: Table(\n                {\n                    Title: \"เช่าทรัพย์สิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Title: \"ชำระเงิน\",\n            Icon: Icon.Money,\n            SubMenu: Table(\n                {\n                    Title: \"ออกใบวางบิลค่าน้ำ/ค่าไฟ\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ออกใบวางบิลค่าเช่า\",\n                    Screen: Blank()\n                },\n                {\n                    Title: \"ชำระเงิน\",\n                    Screen: Blank()\n                }\n            )\n        },\n        {\n            Title: \"รายงาน\",\n            Icon: Icon.DocumentWithContent,\n            SubMenu: Table(\n                {\n                    Title: \"รายงาน\",\n                    Screen: Blank()\n                }\n            )\n        }\n    ),\n    Table(\n        {\n            Title: \"รายงาน\",\n            Icon: Icon.DocumentWithContent,\n            SubMenu: Table(\n                {\n                    Title: \"รายงาน\",\n                    Screen: Blank()\n                }\n            )\n        }\n    )\n)",
           "InvariantPropertyName": "NavItems",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -2145,22 +2145,22 @@
         {
           "Category": "Design",
           "PropertyName": "ZIndex",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
           "PropertyName": "Y",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
           "PropertyName": "X",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
