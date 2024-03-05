@@ -1,0 +1,7 @@
+Dashboard As screen:
+
+    SideBar_1 As SideBar:
+
+    Header_1 As Header:
+        X: =SideBar_1.X + SideBar_1.Width
+

@@ -1,5 +1,12 @@
 App As appinfo:
     BackEnabled: =true
+    ConfirmExit: =true
+    ConfirmExitMessage: ="คุณต้องการออกจากระบบ?"
+    OnStart: |-
+        =Set(colorPrimary,RGBA(7,22,81,1));
+        Set(colorSecondary,RGBA(227, 241, 247, 1));
+        Set(currentUser, User());
+    StartScreen: =Dashboard
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
