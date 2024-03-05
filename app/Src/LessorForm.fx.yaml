@@ -8,8 +8,8 @@ LessorForm As screen:
         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
-        PaddingLeft: =50
-        PaddingRight: =50
+        PaddingLeft: =40
+        PaddingRight: =40
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -21,6 +21,7 @@ LessorForm As screen:
 
         ContainerBody_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
+            Height: =1000
             LayoutMinHeight: =1000
             LayoutMinWidth: =250
             RadiusBottomLeft: =0
@@ -58,6 +59,7 @@ LessorForm As screen:
 
             FormLessor As form:
                 DataSource: =Lessor
+                Height: =422
                 Width: =840
                 X: =75
                 Y: =141

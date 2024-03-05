@@ -5,19 +5,30 @@ LessorList As screen:
 
     ContainerMainBody As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height - Header_2.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
+        PaddingLeft: =40
+        PaddingRight: =40
+        PaddingTop: =40
         Width: =Parent.Width - SideBar_2.Width
         X: =SideBar_2.Width
         Y: =Header_2.Height
         ZIndex: =1
 
         ContainerBody As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            Height: =1000
             LayoutMinHeight: =1000
             LayoutMinWidth: =250
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Width: =Parent.Width
+            Y: =
             ZIndex: =1
 
             GalleryShowLessor As gallery.variableTemplateHeightGallery:
@@ -43,8 +54,8 @@ LessorList As screen:
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =280
-                X: =245
-                Y: =176
+                X: =141
+                Y: =192
                 ZIndex: =1
 
             Paginator_1 As Paginator:
@@ -53,6 +64,72 @@ LessorList As screen:
                 X: =400
                 Y: =524
                 ZIndex: =2
+
+            Container6 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =106
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                ZIndex: =3
+
+                Label2 As label:
+                    Size: =15
+                    Text: ="รายชื่อผู้ให้เช่า"
+                    ZIndex: =1
+
+                Container7 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    LayoutJustifyContent: =LayoutJustifyContent.End
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    ZIndex: =2
+
+                    Container9 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        LayoutGap: =20
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        ZIndex: =1
+
+                        TextInput1_1 As text:
+                            AlignInContainer: =AlignInContainer.Start
+                            Default: ="Text input"
+                            ZIndex: =1
+
+                        Button2_1 As button:
+                            Text: ="Button"
+                            ZIndex: =2
+
+                    Container8 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        LayoutJustifyContent: =LayoutJustifyContent.End
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        ZIndex: =4
+
+                        Button3_1 As button:
+                            Text: ="Button"
+                            ZIndex: =1
 
     SideBar_2 As SideBar:
         NavItems: |-
