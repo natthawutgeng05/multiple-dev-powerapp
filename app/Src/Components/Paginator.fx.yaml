@@ -1,0 +1,89 @@
+Paginator As CanvasComponent:
+    CountAll: =100
+    Fill: =RGBA(0, 0, 0, 0)
+    Gellary: =Table({})
+    Height: =30
+    IsIconDisable: =If(Icon5_1.DisplayMode = DisplayMode.Disabled,  true, false)
+    PageSize: =20
+    Width: =330
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Icon5_1 As icon.ArrowRight:
+        DisplayMode: |-
+            =If(
+                Paginator.PageSize * varPageNumber <= Paginator.CountAll - 1,
+                DisplayMode.Edit,
+                DisplayMode.Disabled
+            )
+        Height: =25
+        Icon: =Icon.ArrowRight
+        OnSelect: =Set(varPageNumber, varPageNumber+1)
+        Width: =25
+        X: =254
+        ZIndex: =1
+
+    Icon6_1 As icon.ArrowLeft:
+        DisplayMode: =If(varPageNumber=1, DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =25
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Set(varPageNumber, varPageNumber-1)
+        Width: =25
+        X: =45
+        ZIndex: =2
+
+    Icon7_1 As icon.NextArrow:
+        DisplayMode: |-
+            =If(
+                Paginator.PageSize * varPageNumber <= Paginator.CountAll - 1,
+                DisplayMode.Edit,
+                DisplayMode.Disabled
+            )
+        Height: =25
+        Icon: =Icon.NextArrow
+        OnSelect: |-
+            =Set(
+                varPageNumber,
+                RoundUp(
+                    Paginator.CountAll / Paginator.PageSize,
+                    0
+                )
+            )
+        Width: =25
+        X: =291
+        ZIndex: =3
+
+    Icon8_1 As icon.BackArrow:
+        DisplayMode: =If(varPageNumber=1, DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =25
+        Icon: =Icon.BackArrow
+        OnSelect: =Set(varPageNumber, 1)
+        Width: =25
+        X: =9
+        ZIndex: =4
+
+    Label5_2 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Size: =10
+        Text: |-
+            ="หน้า " & varPageNumber & " จาก " & If(
+                Mod(
+                    CountRows(Paginator.Gellary),
+                    100
+                ) = 0,
+                RoundUp(
+                    CountRows(Paginator.Gellary) / Paginator.PageSize,
+                    0
+                ) & "+ หน้า",
+                RoundUp(
+                    CountRows(Paginator.Gellary) / Paginator.PageSize,
+                    0
+                ) & " หน้า"
+            )
+        Width: =177
+        X: =77
+        Y: =2
+        ZIndex: =5
+

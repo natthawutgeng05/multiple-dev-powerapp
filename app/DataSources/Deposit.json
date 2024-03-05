@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cra20_deposit",
+    "MaxGetRowsCount": 1000,
     "Name": "Deposit",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

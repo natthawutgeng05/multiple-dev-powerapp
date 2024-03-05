@@ -1,0 +1,201 @@
+SideBar As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =Max(App.Height, App.MinScreenHeight)
+    NavItems: |-
+        =If(
+            isAdmin,
+            Table(
+                {
+                    Tile: "ตั้งค่าข้อมูล",
+                    Icon: Icon.Settings,
+                    SubMenu: Table(
+                        {
+                            Tile: "ผู้ดูแลระบบ",
+                            Icon: Icon.Add,
+                            Screen: UserList,
+                            ScreenChild: LessorForm
+                        },
+                        {
+                            Tile: "ข้อมูลผู้ให้เช่า",
+                            Icon: Icon.Add,
+                            Screen: LessorList,
+                            ScreenChild: LessorForm
+                        },
+                        {
+                            Tile: "ข้อมูลเช่า",
+                            Screen: Blank()
+                        },
+                        {
+                            Tile: "ข้อมูลทรัพย์สิน",
+                            Screen: Blank()
+                        },
+                        {
+                            Tile: "ข้อมูลซ่อมแซมทรัพย์สิน",
+                            Screen: Blank()
+                        }
+                    )
+                },
+                {
+                    Tile: "เช่าทรัพย์สิน",
+                    Icon: Icon.OfficeBuilding,
+                    SubMenu: Table(
+                        {
+                            Tile: "เช่าทรัพย์สิน",
+                            Screen: Blank()
+                        }
+                    )
+                },
+                {
+                    Tile: "ชำระเงิน",
+                    Icon: Icon.Money,
+                    SubMenu: Table(
+                        {
+                            Tile: "ออกใบวางบิลค่าน้ำ/ค่าไฟ",
+                            Screen: Blank()
+                        },
+                        {
+                            Tile: "ออกใบวางบิลค่าเช่า",
+                            Screen: Blank()
+                        },
+                        {
+                            Tile: "ชำระเงิน",
+                            Screen: Blank()
+                        }
+                    )
+                },
+                {
+                    Tile: "รายงาน",
+                    Icon: Icon.DocumentWithContent,
+                    SubMenu: Table(
+                        {
+                            Tile: "รายงาน",
+                            Screen: Blank()
+                        }
+                    )
+                }
+            ),
+            Table(
+                {
+                    Tile: "รายงาน",
+                    Icon: Icon.DocumentWithContent,
+                    SubMenu: Table(
+                        {
+                            Tile: "รายงาน",
+                            Screen: LessorList,
+                            ScreenChild: LessorForm
+                        }
+                    )
+                }
+            )
+        )
+    Width: =215
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    ContainerNav As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Fill: =RGBA(7, 22, 81, 1)
+        Height: =Parent.Height
+        PaddingBottom: =20
+        PaddingLeft: =5
+        PaddingRight: =20
+        PaddingTop: =20
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =215
+        ZIndex: =2
+
+        NC As label:
+            Color: =RGBA(249, 104, 71, 1)
+            FontWeight: =FontWeight.Bold
+            Size: =16
+            Text: ="NC"
+            X: =15
+            Y: =10
+            ZIndex: =1
+
+        MainNCTitle As label:
+            Color: =RGBA(227, 241, 247, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =39
+            Size: =16
+            Text: ="- STOCK"
+            Width: =118
+            X: =49
+            Y: =10
+            ZIndex: =2
+
+        Rectangle4 As rectangle:
+            Fill: =RGBA(227, 241, 247, 1)
+            Height: =1
+            Width: =Parent.Width
+            X: =Parent.X
+            Y: =60
+            ZIndex: =3
+
+        GalleryMainMenu As gallery.variableTemplateHeightGallery:
+            Height: =689
+            Items: =SideBar.NavItems
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            ShowScrollbar: =false
+            TemplateSize: =200
+            Width: =194
+            X: =15
+            Y: =78
+            ZIndex: =4
+
+            GallerySubMenu As gallery.variableTemplateHeightGallery:
+                Height: =CountRows(ThisItem.SubMenu) * 43
+                Items: =ThisItem.SubMenu
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                ShowScrollbar: =false
+                TemplateSize: =CountRows(ThisItem.SubMenu) * 35
+                Width: =Parent.Width
+                Y: =30
+                ZIndex: =1
+
+                Button7 As button:
+                    Align: =Align.Left
+                    BorderThickness: =0
+                    Color: |
+                        =If(
+                            App.ActiveScreen = ThisItem.Screen,
+                            RGBA(249, 104, 71, 1),
+                            RGBA(227, 241, 247, 1)
+                        )
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =30
+                    HoverFill: =ColorFade(RGBA(249,104,71,1),-20%)
+                    OnSelect: =Navigate(ThisItem.Screen);
+                    PressedColor: =RGBA(227, 241, 247, 1)
+                    PressedFill: =RGBA(249, 104, 71, 1)
+                    Size: =10
+                    Text: =ThisItem.Tile
+                    Width: =170
+                    Y: =1
+                    ZIndex: =2
+
+            Title As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                OnSelect: =Select(Parent)
+                Size: =11
+                Text: =ThisItem.Tile
+                X: =22
+                ZIndex: =2
+
+            Icon12 As icon.Add:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =20
+                Icon: =ThisItem.Icon
+                OnSelect: =Select(Parent)
+                Width: =20
+                X: =1
+                Y: =10
+                ZIndex: =3
+

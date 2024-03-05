@@ -6,7 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cra20_lessor",
-    "MaxGetRowsCount": 500,
+    "MaxGetRowsCount": 1000,
     "Name": "Lessor",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

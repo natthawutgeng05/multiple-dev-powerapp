@@ -1,1 +1,139 @@
-{}
+{
+  "034ee724-ec8c-4be8-96ae-5a59124e3d00": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "d3e55999-55f1-41ea-9ee1-e8b4b63c9f96": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "workflowDisplayName": {
+          "value": "ExportExcel"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "e62a9d0c-ae63-4e8b-80b2-7b2f333ab1c2"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_onedriveforbusiness": {
+          "value": "d3e55999-55f1-41ea-9ee1-e8b4b63c9f96"
+        },
+        "workflowDisplayName": {
+          "value": "ExportExcel"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "e62a9d0c-ae63-4e8b-80b2-7b2f333ab1c2"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ExportExcel"
+    ],
+    "dependencies": {
+      "shared_onedriveforbusiness": "d3e55999-55f1-41ea-9ee1-e8b4b63c9f96"
+    },
+    "dependents": [],
+    "id": "034ee724-ec8c-4be8-96ae-5a59124e3d00"
+  },
+  "89826618-4369-42ec-89cb-1bcc1305e47e": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "d3e55999-55f1-41ea-9ee1-e8b4b63c9f96": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "workflowDisplayName": {
+          "value": "PrintPDF"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "5517d1a8-adc3-4698-b1d8-41169332e73f"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_onedriveforbusiness": {
+          "value": "d3e55999-55f1-41ea-9ee1-e8b4b63c9f96"
+        },
+        "workflowDisplayName": {
+          "value": "PrintPDF"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "5517d1a8-adc3-4698-b1d8-41169332e73f"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PrintPDF"
+    ],
+    "dependencies": {
+      "shared_onedriveforbusiness": "d3e55999-55f1-41ea-9ee1-e8b4b63c9f96"
+    },
+    "dependents": [],
+    "id": "89826618-4369-42ec-89cb-1bcc1305e47e"
+  },
+  "aeb5339c-bd21-4e74-a513-d1e30da176e9": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "8751f7e7-6b2a-4f1d-a21b-bf290fa01fcf": {
+          "value": "shared_cloudmersiveconvert"
+        },
+        "d3e55999-55f1-41ea-9ee1-e8b4b63c9f96": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "workflowDisplayName": {
+          "value": "ConvertHTMLtoPDFuseAPI"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "de898d5f-57a0-4385-b878-b769f2f5cabb"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_cloudmersiveconvert": {
+          "value": "8751f7e7-6b2a-4f1d-a21b-bf290fa01fcf"
+        },
+        "shared_onedriveforbusiness": {
+          "value": "d3e55999-55f1-41ea-9ee1-e8b4b63c9f96"
+        },
+        "workflowDisplayName": {
+          "value": "ConvertHTMLtoPDFuseAPI"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "de898d5f-57a0-4385-b878-b769f2f5cabb"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ConvertHTMLtoPDFuseAPI"
+    ],
+    "dependencies": {
+      "shared_cloudmersiveconvert": "8751f7e7-6b2a-4f1d-a21b-bf290fa01fcf",
+      "shared_onedriveforbusiness": "d3e55999-55f1-41ea-9ee1-e8b4b63c9f96"
+    },
+    "dependents": [],
+    "id": "aeb5339c-bd21-4e74-a513-d1e30da176e9"
+  }
+}

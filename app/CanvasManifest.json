@@ -101,9 +101,9 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 8,
     "ContainsThirdPartyPcfControls": false,
-    "DefaultConnectedDataSourceMaxGetRowsCount": 500,
+    "DefaultConnectedDataSourceMaxGetRowsCount": 1000,
     "DocumentAppType": "DesktopOrTablet",
     "DocumentLayoutHeight": 768,
     "DocumentLayoutLockOrientation": false,
@@ -114,10 +114,10 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "187879c9-e3a3-4a16-b4b4-a00962f64b62",
-    "Id": "187879c9-e3a3-4a16-b4b4-a00962f64b62",
+    "Id": "056a0d13-a61d-4d81-9634-f8aee4e03104",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
-    "Name": "Git connect",
+    "Name": "Git%2Bconnect.msapp",
     "OriginatingVersion": "1.336",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
@@ -131,7 +131,7 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "th-TH"
+    "UserLocale": "en-US"
   },
   "ScreenOrder": [
     "Screen1",

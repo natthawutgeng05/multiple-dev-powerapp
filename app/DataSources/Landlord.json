@@ -6,7 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cra20_landlord",
-    "MaxGetRowsCount": 500,
+    "MaxGetRowsCount": 1000,
     "Name": "Landlord",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

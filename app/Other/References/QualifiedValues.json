@@ -2,6 +2,76 @@
   "QualifiedValues": [
     {
       "Kind": "default.cds_cra20_lessor_forms",
+      "Namespace": "Lessor (Forms)",
+      "Values": {
+        "Information": "346de1e0-c752-4584-8526-ee704d1a29d3"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_tenant_forms",
+      "Namespace": "Tenant (Forms)",
+      "Values": {
+        "Information": "c2e1d788-bd1f-472e-938a-fbb4719936bb"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_zone_forms",
+      "Namespace": "Zone (Forms)",
+      "Values": {
+        "Information": "4a794c56-c0df-45de-958d-c33c28533bda"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_landlord_forms",
+      "Namespace": "Landlord (Forms)",
+      "Values": {
+        "Information": "44859adc-0cfb-4265-a535-34c9e280568b"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_landtitledeed_forms",
+      "Namespace": "Land title deed (Forms)",
+      "Values": {
+        "Information": "d48e2076-dd53-4eba-a8c4-dbf97242cdd3"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_property_forms",
+      "Namespace": "Property (Forms)",
+      "Values": {
+        "Information": "d83b5851-bf74-41e2-a177-dbae3c94153d"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_rent_forms",
+      "Namespace": "Rent (Forms)",
+      "Values": {
+        "Information": "6695dec6-3536-42bb-a09a-dcaeb56afa82"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_utitlities_forms",
+      "Namespace": "Utitlities (Forms)",
+      "Values": {
+        "Information": "b565d944-714c-4cad-b721-e2429e8eabae"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_deposit_forms",
+      "Namespace": "Deposit (Forms)",
+      "Values": {
+        "Information": "1802daaf-6cac-4567-a65e-f1b230b1f20b"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_billing_forms",
+      "Namespace": "Billing (Forms)",
+      "Values": {
+        "Information": "61bbbd5a-0be2-467f-b67c-a944dd0fcdb2"
+      }
+    },
+    {
+      "Kind": "default.cds_cra20_lessor_forms",
       "Namespace": "Lessor (ฟอร์ม)",
       "Values": {
         "Information": "346de1e0-c752-4584-8526-ee704d1a29d3"

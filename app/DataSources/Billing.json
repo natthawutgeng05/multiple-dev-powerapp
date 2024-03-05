@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cra20_billing",
+    "MaxGetRowsCount": 1000,
     "Name": "Billing",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

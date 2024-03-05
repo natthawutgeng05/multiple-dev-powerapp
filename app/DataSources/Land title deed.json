@@ -6,7 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cra20_landtitledeed",
-    "MaxGetRowsCount": 500,
+    "MaxGetRowsCount": 1000,
     "Name": "Land title deed",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

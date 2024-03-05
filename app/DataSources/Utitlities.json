@@ -6,7 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cra20_utitlities",
-    "MaxGetRowsCount": 500,
+    "MaxGetRowsCount": 1000,
     "Name": "Utitlities",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
