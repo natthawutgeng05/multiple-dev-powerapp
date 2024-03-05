@@ -1,6 +1,7 @@
 LessorForm As screen:
 
     ContainerMainBody_1 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.None
         Height: =Parent.Height - Header_2.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
@@ -9,23 +10,58 @@ LessorForm As screen:
         LayoutOverflowY: =LayoutOverflow.Scroll
         PaddingLeft: =50
         PaddingRight: =50
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Width: =Parent.Width - SideBar_2.Width
         X: =SideBar_2.Width
         Y: =Header_2.Height
         ZIndex: =1
 
         ContainerBody_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
             LayoutMinHeight: =1000
             LayoutMinWidth: =250
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Width: =Parent.Width
             ZIndex: =1
+
+            Container4 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =78
+                LayoutAlignItems: =LayoutAlignItems.End
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                Y: =563
+                ZIndex: =1
+
+                Button1 As button:
+                    OnSelect: |
+                        =If(SubmitForm(FormLessor), Navigate(LessorList))
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Size: =10
+                    Text: ="บันทึกข้อมูล"
+                    Width: =100
+                    ZIndex: =1
 
             FormLessor As form:
                 DataSource: =Lessor
                 Width: =840
                 X: =75
                 Y: =141
-                ZIndex: =1
+                ZIndex: =2
 
                 "'Lessor Name_DataCard1' As typedDataCard.textualEditCard":
                     BorderStyle: =BorderStyle.Solid
@@ -776,12 +812,33 @@ LessorForm As screen:
                         ZIndex: =4
 
             Container3 As groupContainer.verticalAutoLayoutContainer:
-                LayoutAlignItems: =LayoutAlignItems.Stretch
+                DropShadow: =DropShadow.None
+                Height: =96
                 LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =15
                 LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Width: =Parent.Width
                 Y: =27
-                ZIndex: =2
+                ZIndex: =3
+
+                Icon1 As icon.ArrowLeft:
+                    AlignInContainer: =AlignInContainer.Start
+                    Color: =colorPrimary
+                    Height: =25
+                    Icon: =Icon.ArrowLeft
+                    LayoutMinWidth: =30
+                    OnSelect: =Navigate(LessorList);
+                    Width: =25
+                    ZIndex: =1
+
+                Label1 As label:
+                    Color: =colorPrimary
+                    Text: ="ข้อมูลู้ให้เช่า"
+                    ZIndex: =2
 
     SideBar_3 As SideBar:
         NavItems: |-
