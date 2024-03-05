@@ -1,4 +1,7 @@
 LessorList As screen:
+    OnVisible: |-
+        =Set(varPageNumber,1);
+        Set(varPageSize,20);
 
     ContainerMainBody As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height - Header_2.Height
@@ -25,30 +28,30 @@ LessorList As screen:
                         LastN(
                             FirstN(
                                 GalleryLessorHide.AllItems,
-                                20 * varPageNumber
+                                varPageSize * varPageNumber
                             ),
-                            20 - (20 * varPageNumber - CountRows(GalleryLessorHide.AllItems) )
+                            varPageSize - (varPageSize * varPageNumber - CountRows(GalleryLessorHide.AllItems) )
                         ),
                         LastN(
                             FirstN(
                                 GalleryLessorHide.AllItems,
-                                20 * varPageNumber
+                                varPageSize * varPageNumber
                             ),
-                            20
+                            varPageSize
                         )
                     )
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =280
-                X: =207
-                Y: =96
+                X: =245
+                Y: =176
                 ZIndex: =1
 
             Paginator_1 As Paginator:
                 CountAll: =CountRows(GalleryLessorHide.AllItems)
                 Gellary: =GalleryLessorHide.AllItems
-                X: =362
-                Y: =571
+                X: =400
+                Y: =524
                 ZIndex: =2
 
     SideBar_2 As SideBar:
