@@ -1,0 +1,279 @@
+LessorList As screen:
+    OnVisible: |-
+        =Set(varPageNumber,1);
+        Set(varPageSize,20);
+
+    ContainerMainBody As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height - Header_2.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        PaddingLeft: =40
+        PaddingRight: =40
+        PaddingTop: =40
+        Width: =Parent.Width - SideBar_2.Width
+        X: =SideBar_2.Width
+        Y: =Header_2.Height
+        ZIndex: =1
+
+        ContainerBody As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =1000
+            LayoutMinHeight: =1000
+            LayoutMinWidth: =250
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width
+            Y: =
+            ZIndex: =1
+
+            GalleryShowLessor As gallery.variableTemplateHeightGallery:
+                DelayItemLoading: =true
+                Items: |-
+                    =If(
+                        Paginator_1.IsIconDisable,
+                        LastN(
+                            FirstN(
+                                GalleryLessorHide.AllItems,
+                                varPageSize * varPageNumber
+                            ),
+                            varPageSize - (varPageSize * varPageNumber - CountRows(GalleryLessorHide.AllItems) )
+                        ),
+                        LastN(
+                            FirstN(
+                                GalleryLessorHide.AllItems,
+                                varPageSize * varPageNumber
+                            ),
+                            varPageSize
+                        )
+                    )
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplateSize: =340
+                Width: =1059
+                Y: =162
+                ZIndex: =1
+
+                Container11 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =104
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    Width: =1049
+                    ZIndex: =1
+
+                    Label4 As label:
+                        Text: =ThisItem.RowNo
+                        ZIndex: =1
+
+            Paginator_1 As Paginator:
+                CountAll: =CountRows(GalleryLessorHide.AllItems)
+                Gellary: =GalleryLessorHide.AllItems
+                X: =400
+                Y: =524
+                ZIndex: =2
+
+            Container6 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =106
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =10
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                ZIndex: =3
+
+                Label2 As label:
+                    Size: =15
+                    Text: ="รายชื่อผู้ให้เช่า"
+                    ZIndex: =1
+
+                Container7 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    LayoutJustifyContent: =LayoutJustifyContent.End
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingTop: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    ZIndex: =2
+
+                    Container9 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        LayoutGap: =20
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        ZIndex: =1
+
+                        TextInput1_1 As text:
+                            AlignInContainer: =AlignInContainer.Start
+                            Default: =""
+                            ZIndex: =1
+
+                        Button2_1 As button:
+                            Text: ="ค้นหา"
+                            ZIndex: =2
+
+                    Container8 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        LayoutJustifyContent: =LayoutJustifyContent.End
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        ZIndex: =4
+
+                        Button3_1 As button:
+                            OnSelect: |-
+                                =NewForm(FormLessor);
+                                Navigate(LessorForm);
+                            Text: ="เพิ่ม"
+                            ZIndex: =1
+
+    SideBar_2 As SideBar:
+        NavItems: |-
+            =If(
+                true,
+                Table(
+                    {
+                        Title: "ตั้งค่าข้อมูล",
+                        Icon: Icon.Settings,
+                        SubMenu: Table(
+                            {
+                                Title: "ผู้ดูแลระบบ",
+                                Screen: LessorList
+                            },
+                            {
+                                Title: "ข้อมูลผู้ให้เช่า",
+                                Screen: LessorList
+                            },
+                            {
+                                Title: "ข้อมูลเช่า",
+                                Screen: LessorList
+                            },
+                            {
+                                Title: "ข้อมูลทรัพย์สิน",
+                                Screen: LessorList
+                            },
+                            {
+                                Title: "ข้อมูลซ่อมแซมทรัพย์สิน",
+                                Screen: LessorList
+                            }
+                        )
+                    },
+                    {
+                        Title: "เช่าทรัพย์สิน",
+                        Icon: Icon.OfficeBuilding,
+                        SubMenu: Table(
+                            {
+                                Title: "เช่าทรัพย์สิน",
+                                Screen: LessorList
+                            }
+                        )
+                    },
+                    {
+                        Title: "ชำระเงิน",
+                        Icon: Icon.Money,
+                        SubMenu: Table(
+                            {
+                                Title: "ออกใบวางบิลค่าน้ำ/ค่าไฟ",
+                                Screen: LessorList
+                            },
+                            {
+                                Title: "ออกใบวางบิลค่าเช่า",
+                                Screen: LessorList
+                            },
+                            {
+                                Title: "ชำระเงิน",
+                                Screen: LessorList
+                            }
+                        )
+                    },
+                    {
+                        Title: "รายงาน",
+                        Icon: Icon.DocumentWithContent,
+                        SubMenu: Table(
+                            {
+                                Title: "รายงาน",
+                                Screen: LessorList
+                            }
+                        )
+                    }
+                ),
+                Table(
+                    {
+                        Title: "รายงาน",
+                        Icon: Icon.DocumentWithContent,
+                        SubMenu: Table(
+                            {
+                                Title: "รายงาน",
+                                Screen: LessorList
+                            }
+                        )
+                    }
+                )
+            )
+        ZIndex: =2
+
+    Header_2 As Header:
+        X: =SideBar_2.X + SideBar_2.Width
+        ZIndex: =3
+
+    GalleryLessorHide As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =51
+        Items: |-
+            =With(
+                {
+                    FilterList: Sort(
+                        If(
+                            true,
+                            Filter(
+                                Lessor,
+                                Or(
+                                    //varSearch in Lessor_ID,
+            )
+                            ),
+                            Lessor
+                        ),
+                        'Created On',
+                        SortOrder.Descending
+                    )
+                },
+                ForAll(
+                    Sequence(CountRows(FilterList)),
+                    Patch(
+                        Index(
+                            FilterList,
+                            Value
+                        ),
+                        {RowNo: Value}
+                    )
+                )
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Visible: =false
+        Width: =364
+        X: =1002
+        Y: =717
+        ZIndex: =4
+

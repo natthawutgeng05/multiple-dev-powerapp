@@ -6,7 +6,7 @@ Header As CanvasComponent:
     Y: =0
     ZIndex: =2
 
-    ContainerHeader As groupContainer.horizontalAutoLayoutContainer:
+    Container5_1 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =RGBA(0, 50, 100, 0.05)
         Height: =60
         LayoutAlignItems: =LayoutAlignItems.Center
@@ -21,40 +21,4 @@ Header As CanvasComponent:
         RadiusTopRight: =0
         Width: =Parent.Width
         ZIndex: =1
-
-        TextTitleUser As label:
-            Align: =Align.Right
-            Color: =RGBA(9, 33, 98, 1)
-            FontWeight: =FontWeight.Semibold
-            Size: =10
-            Text: |
-                =User().Email
-            Width: =500
-            ZIndex: =1
-
-        ImgUser As image:
-            Height: =35
-            Image: =User().Image
-            LayoutMinHeight: =40
-            RadiusBottomLeft: =100
-            RadiusBottomRight: =100
-            RadiusTopLeft: =100
-            RadiusTopRight: =100
-            Width: =35
-            ZIndex: =2
-
-        ButtonLogout As button:
-            BorderColor: =RGBA(9, 33, 98, 1)
-            Color: =RGBA(9, 33, 98, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =30
-            OnSelect: =Exit(true)
-            RadiusBottomLeft: =4
-            RadiusBottomRight: =4
-            RadiusTopLeft: =4
-            RadiusTopRight: =4
-            Size: =10
-            Text: ="ออกจากระบบ"
-            Width: =120
-            ZIndex: =3
 

@@ -1,0 +1,345 @@
+LessorForm As screen:
+
+    ContainerMainBody_1 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =Parent.Height - Header_2.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        PaddingLeft: =40
+        PaddingRight: =40
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =Parent.Width - SideBar_2.Width
+        X: =SideBar_2.Width
+        Y: =Header_2.Height
+        ZIndex: =1
+
+        ContainerBody_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =1000
+            LayoutMinHeight: =1000
+            LayoutMinWidth: =250
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Container4 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =78
+                LayoutAlignItems: =LayoutAlignItems.End
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                Y: =563
+                ZIndex: =1
+
+                Button1 As button:
+                    OnSelect: |
+                        =If(SubmitForm(FormLessor), Navigate(LessorList))
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Size: =10
+                    Text: ="บันทึกข้อมูล"
+                    Width: =100
+                    ZIndex: =1
+
+            FormLessor As form:
+                DataSource: =Lessor
+                Height: =422
+                Width: =840
+                X: =75
+                Y: =141
+                ZIndex: =2
+
+                "'Lessor Name_DataCard1' As typedDataCard.textualEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="cra20_lessorname"
+                    Default: =ThisItem.'Lessor Name'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Lessor],DataSourceInfo.DisplayName,"cra20_lessorname")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Lessor], DataSourceInfo.MaxLength, "cra20_lessorname")
+                    Required: =true
+                    Update: =DataCardValue1.Text
+                    Width: =280
+                    X: =0
+                    Y: =0
+                    ZIndex: =2
+
+                Number_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="cra20_number"
+                    Default: =ThisItem.Number
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Lessor],DataSourceInfo.DisplayName,"cra20_number")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Lessor], DataSourceInfo.MaxLength, "cra20_number")
+                    Required: =false
+                    Update: =DataCardValue2.Text
+                    Width: =280
+                    X: =1
+                    Y: =0
+                    ZIndex: =2
+
+                "'Village No_DataCard1' As typedDataCard.textualEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="cra20_villageno"
+                    Default: =ThisItem.'Village No'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Lessor],DataSourceInfo.DisplayName,"cra20_villageno")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Lessor], DataSourceInfo.MaxLength, "cra20_villageno")
+                    Required: =false
+                    Update: =DataCardValue3.Text
+                    Width: =280
+                    X: =2
+                    Y: =0
+                    ZIndex: =2
+
+                Lane_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="cra20_lane"
+                    Default: =ThisItem.Lane
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Lessor],DataSourceInfo.DisplayName,"cra20_lane")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Lessor], DataSourceInfo.MaxLength, "cra20_lane")
+                    Required: =false
+                    Update: =DataCardValue4.Text
+                    Width: =280
+                    X: =0
+                    Y: =1
+                    ZIndex: =2
+
+                "'Sub-district_DataCard1' As typedDataCard.textualEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="cra20_subdistrict"
+                    Default: =ThisItem.'Sub-district'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Lessor],DataSourceInfo.DisplayName,"cra20_subdistrict")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Lessor], DataSourceInfo.MaxLength, "cra20_subdistrict")
+                    Required: =false
+                    Update: =DataCardValue5.Text
+                    Width: =280
+                    X: =1
+                    Y: =1
+                    ZIndex: =2
+
+                District_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="cra20_district"
+                    Default: =ThisItem.District
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Lessor],DataSourceInfo.DisplayName,"cra20_district")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Lessor], DataSourceInfo.MaxLength, "cra20_district")
+                    Required: =false
+                    Update: =DataCardValue6.Text
+                    Width: =280
+                    X: =2
+                    Y: =1
+                    ZIndex: =2
+
+                Province_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="cra20_province"
+                    Default: =ThisItem.Province
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Lessor],DataSourceInfo.DisplayName,"cra20_province")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Lessor], DataSourceInfo.MaxLength, "cra20_province")
+                    Required: =false
+                    Update: =DataCardValue7.Text
+                    Width: =280
+                    X: =0
+                    Y: =2
+                    ZIndex: =2
+
+                "'Postal Code_DataCard1' As typedDataCard.textualEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="cra20_postalcode"
+                    Default: =ThisItem.'Postal Code'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Lessor],DataSourceInfo.DisplayName,"cra20_postalcode")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Lessor], DataSourceInfo.MaxLength, "cra20_postalcode")
+                    Required: =false
+                    Update: =DataCardValue8.Text
+                    Width: =280
+                    X: =1
+                    Y: =2
+                    ZIndex: =2
+
+                Fax_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="cra20_fax"
+                    Default: =ThisItem.Fax
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Lessor],DataSourceInfo.DisplayName,"cra20_fax")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Lessor], DataSourceInfo.MaxLength, "cra20_fax")
+                    Required: =false
+                    Update: =DataCardValue10.Text
+                    Width: =280
+                    X: =0
+                    Y: =3
+                    ZIndex: =2
+
+                Taxpayer_number_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="cra20_taxpayer_number"
+                    Default: =ThisItem.Taxpayer_number
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@Lessor],DataSourceInfo.DisplayName,"cra20_taxpayer_number")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@Lessor], DataSourceInfo.MaxLength, "cra20_taxpayer_number")
+                    Required: =false
+                    Update: =DataCardValue11.Text
+                    Width: =280
+                    X: =1
+                    Y: =3
+                    ZIndex: =2
+
+            Container3 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =96
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =15
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                Y: =27
+                ZIndex: =3
+
+                Icon1 As icon.ArrowLeft:
+                    AlignInContainer: =AlignInContainer.Start
+                    Color: =colorPrimary
+                    Height: =25
+                    Icon: =Icon.ArrowLeft
+                    LayoutMinWidth: =30
+                    OnSelect: =Navigate(LessorList);
+                    Width: =25
+                    ZIndex: =1
+
+                Label1 As label:
+                    Color: =colorPrimary
+                    Text: ="ข้อมูลู้ให้เช่า"
+                    ZIndex: =2
+
+    SideBar_3 As SideBar:
+        NavItems: |-
+            =If(
+                true,
+                Table(
+                    {
+                        Title: "ตั้งค่าข้อมูล",
+                        Icon: Icon.Settings,
+                        SubMenu: Table(
+                            {
+                                Title: "ผู้ดูแลระบบ",
+                                Screen: LessorForm
+                            },
+                            {
+                                Title: "ข้อมูลผู้ให้เช่า",
+                                Screen: LessorForm
+                            },
+                            {
+                                Title: "ข้อมูลเช่า",
+                                Screen: LessorForm
+                            },
+                            {
+                                Title: "ข้อมูลทรัพย์สิน",
+                                Screen: LessorForm
+                            },
+                            {
+                                Title: "ข้อมูลซ่อมแซมทรัพย์สิน",
+                                Screen: LessorForm
+                            }
+                        )
+                    },
+                    {
+                        Title: "เช่าทรัพย์สิน",
+                        Icon: Icon.OfficeBuilding,
+                        SubMenu: Table(
+                            {
+                                Title: "เช่าทรัพย์สิน",
+                                Screen: LessorForm
+                            }
+                        )
+                    },
+                    {
+                        Title: "ชำระเงิน",
+                        Icon: Icon.Money,
+                        SubMenu: Table(
+                            {
+                                Title: "ออกใบวางบิลค่าน้ำ/ค่าไฟ",
+                                Screen: LessorForm
+                            },
+                            {
+                                Title: "ออกใบวางบิลค่าเช่า",
+                                Screen: LessorForm
+                            },
+                            {
+                                Title: "ชำระเงิน",
+                                Screen: LessorForm
+                            }
+                        )
+                    },
+                    {
+                        Title: "รายงาน",
+                        Icon: Icon.DocumentWithContent,
+                        SubMenu: Table(
+                            {
+                                Title: "รายงาน",
+                                Screen: LessorForm
+                            }
+                        )
+                    }
+                ),
+                Table(
+                    {
+                        Title: "รายงาน",
+                        Icon: Icon.DocumentWithContent,
+                        SubMenu: Table(
+                            {
+                                Title: "รายงาน",
+                                Screen: LessorForm
+                            }
+                        )
+                    }
+                )
+            )
+        ZIndex: =2
+
+    Header_3 As Header:
+        X: =SideBar_3.X + SideBar_3.Width
+        ZIndex: =3
+

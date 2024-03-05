@@ -93,7 +93,7 @@ SideBar As CanvasComponent:
     Y: =0
     ZIndex: =1
 
-    ContainerSidebar As groupContainer.manualLayoutContainer:
+    ContainerNav As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Fill: =RGBA(7, 22, 81, 1)
         Height: =Parent.Height

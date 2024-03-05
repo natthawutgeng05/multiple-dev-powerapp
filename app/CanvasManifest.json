@@ -131,12 +131,11 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "th-TH"
+    "UserLocale": "en-US"
   },
   "ScreenOrder": [
     "Dashboard",
-    "Screen2",
-    "Screen3",
-    "Screen4"
+    "LessorList",
+    "LessorForm"
   ]
 }
