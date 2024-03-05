@@ -1770,9 +1770,9 @@
                     "Rules": [
                       {
                         "Category": "Data",
-                        "InvariantScript": "ThisItem.Tile",
+                        "InvariantScript": "ThisItem.Title",
                         "Property": "Text",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
@@ -1962,7 +1962,7 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "If(\r\n    true,\r\n    RGBA(249, 104, 71, 1),\r\n    RGBA(227, 241, 247, 1)\r\n)\r\n\r\n",
+                        "InvariantScript": "If(\n    App.ActiveScreen.Name,\n    RGBA(\n        249,\n        104,\n        71,\n        1\n    ),\n    RGBA(\n        227,\n        241,\n        247,\n        1\n    )\n)",
                         "Property": "Color",
                         "RuleProviderType": "User"
                       },
@@ -2004,7 +2004,7 @@
                       },
                       {
                         "Category": "Behavior",
-                        "InvariantScript": "Navigate(ThisItem.Screen);",
+                        "InvariantScript": "//Navigate(ThisItem.Screen);",
                         "Property": "OnSelect",
                         "RuleProviderType": "User"
                       }
@@ -2871,7 +2871,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638452184894721513",
+    "LastModifiedTimestamp": "638452187064577475",
     "Name": "SideBar",
     "Rules": [
       {
@@ -2946,7 +2946,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638452184894721513",
+  "LastModifiedTimestamp": "638452187064577475",
   "Name": "be2fe9ac34534857998e809f77ba9405",
   "OverridableProperties": {},
   "TemplateOriginalName": "aeb9853246be4570a4773227f3e40b2f",

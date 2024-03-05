@@ -157,21 +157,30 @@ SideBar As CanvasComponent:
                 ButtonItem As button:
                     Align: =Align.Left
                     BorderThickness: =0
-                    Color: |+
+                    Color: |-
                         =If(
-                            true,
-                            RGBA(249, 104, 71, 1),
-                            RGBA(227, 241, 247, 1)
+                            App.ActiveScreen.Name,
+                            RGBA(
+                                249,
+                                104,
+                                71,
+                                1
+                            ),
+                            RGBA(
+                                227,
+                                241,
+                                247,
+                                1
+                            )
                         )
-                        
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =30
                     HoverFill: =ColorFade(RGBA(249,104,71,1),-20%)
-                    OnSelect: =Navigate(ThisItem.Screen);
+                    OnSelect: =//Navigate(ThisItem.Screen);
                     PressedColor: =RGBA(227, 241, 247, 1)
                     PressedFill: =RGBA(249, 104, 71, 1)
                     Size: =10
-                    Text: =ThisItem.Tile
+                    Text: =ThisItem.Title
                     Width: =170
                     Y: =1
                     ZIndex: =2
