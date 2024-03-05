@@ -58,6 +58,17 @@ LessorList As screen:
                 Y: =162
                 ZIndex: =1
 
+                Container11 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =104
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    Width: =1049
+                    ZIndex: =1
+
+                    Label4 As label:
+                        Text: =ThisItem.RowNo
+                        ZIndex: =1
+
             Paginator_1 As Paginator:
                 CountAll: =CountRows(GalleryLessorHide.AllItems)
                 Gellary: =GalleryLessorHide.AllItems
