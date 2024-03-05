@@ -135,6 +135,7 @@
   },
   "ScreenOrder": [
     "Dashboard",
-    "LessorList"
+    "LessorList",
+    "LessorForm"
   ]
 }
