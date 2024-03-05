@@ -1,5 +1,48 @@
 LessorList As screen:
 
+    ContainerMainBody As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height - Header_2.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        Width: =Parent.Width - SideBar_2.Width
+        X: =SideBar_2.Width
+        Y: =Header_2.Height
+        ZIndex: =1
+
+        ContainerBody As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            LayoutMinHeight: =1000
+            LayoutMinWidth: =250
+            ZIndex: =1
+
+            GalleryShowLessor As gallery.variableTemplateHeightGallery:
+                DelayItemLoading: =true
+                Items: |-
+                    =If(
+                        Paginator_1.IsIconDisable,
+                        LastN(
+                            FirstN(
+                                GalleryLessorMain.AllItems,
+                                varPageSize * varPageNumber
+                            ),
+                            varPageSize - (varPageSize * varPageNumber - CountRows(GalleryLessorMain.AllItems) )
+                        ),
+                        LastN(
+                            FirstN(
+                                GalleryLessorMain.AllItems,
+                                varPageSize * varPageNumber
+                            ),
+                            varPageSize
+                        )
+                    )
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplateSize: =280
+                X: =207
+                Y: =96
+                ZIndex: =1
+
     SideBar_2 As SideBar:
         NavItems: |-
             =If(
@@ -83,7 +126,50 @@ LessorList As screen:
                     }
                 )
             )
+        ZIndex: =2
 
     Header_2 As Header:
         X: =SideBar_2.X + SideBar_2.Width
+        ZIndex: =3
+
+    GalleryLessorHide As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =51
+        Items: |-
+            =With(
+                {
+                    FilterList: Sort(
+                        If(
+                            true,
+                            Filter(
+                                Lessor,
+                                Or(
+                                    //varSearch in Lessor_ID,
+            )
+                            ),
+                            Lessor
+                        ),
+                        'Created On',
+                        SortOrder.Descending
+                    )
+                },
+                ForAll(
+                    Sequence(CountRows(FilterList)),
+                    Patch(
+                        Index(
+                            FilterList,
+                            Value
+                        ),
+                        {RowNo: Value}
+                    )
+                )
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Visible: =false
+        Width: =364
+        X: =1002
+        Y: =717
+        ZIndex: =4
 
