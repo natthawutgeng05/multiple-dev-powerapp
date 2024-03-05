@@ -11,12 +11,10 @@ SideBar As CanvasComponent:
                     SubMenu: Table(
                         {
                             Title: "ผู้ดูแลระบบ",
-                            Icon: Icon.Add,
-                            Screen: 'Dashboard'
+                            Screen: Dashboard
                         },
                         {
                             Title: "ข้อมูลผู้ให้เช่า",
-                            Icon: Icon.Add,
                             Screen: Blank()
                         },
                         {
