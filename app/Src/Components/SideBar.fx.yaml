@@ -161,7 +161,7 @@ SideBar As CanvasComponent:
                     BorderThickness: =0
                     Color: |+
                         =If(
-                            App.ActiveScreen = ThisItem.Screen,
+                            true,
                             RGBA(249, 104, 71, 1),
                             RGBA(227, 241, 247, 1)
                         )
